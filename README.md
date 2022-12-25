@@ -31,5 +31,5 @@
 + [Clear Clock](https://github.com/qewer33/ClearClock)
 + [Event Calendar](https://store.kde.org/p/998901/)
 
-*If you are trying my config's and are stuck feel free to open an issue ^^ *
+***If you are trying my config's and are stuck feel free to open an issue ^^***
 
