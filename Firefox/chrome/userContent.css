@@ -1,0 +1,44 @@
+/* 
+┌─┐┬┌┬┐┌─┐┬  ┌─┐
+└─┐││││├─┘│  ├┤ 
+└─┘┴┴ ┴┴  ┴─┘└─┘
+┌─┐┌─┐─┐ ┬      
+├┤ │ │┌┴┬┘      
+└  └─┘┴ └─
+
+by Miguel Avila
+
+*/
+
+:root {
+  scrollbar-width: none !important;
+}
+
+@-moz-document url(about:privatebrowsing) {
+  :root {
+    scrollbar-width: none !important;
+  }
+}
+
+@-moz-document url-prefix(about:blank), url-prefix(about:newtab) {
+
+html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
+
+ background: #161616 !important;
+
+}
+
+}
+
+@-moz-document url(about:newtab),
+
+url(about:home) {
+
+body{
+
+  background-color:#161616 !important;
+
+  color:#201e21 !important;
+
+}
+

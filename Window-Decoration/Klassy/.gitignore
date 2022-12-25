@@ -1,0 +1,8 @@
+.clang-format
+/compile_commands.json
+.clangd
+.idea
+/cmake-build*
+.cache
+build/
+.directory
