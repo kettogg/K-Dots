@@ -26,6 +26,7 @@
 + **Audio Visualizer** - Cava [Config](https://github.com/ryuJin25/Kde-Configs/tree/main/.Config/Cava)
 + **Fetch Util** - Neofetch [Config](https://github.com/ryuJin25/Kde-Configs/tree/main/.Config/Neofetch)
 + **Spotify Enhancer** - [Spicetify](https://spicetify.app/docs/advanced-usage/installation/)
++ **Launcher Icon** - [Arch Icon](https://github.com/ryuJin25/Kde-Configs/tree/main/Arch-Icons)
 
 ## *Widgets*
 + [Clear Clock](https://github.com/qewer33/ClearClock)
