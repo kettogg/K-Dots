@@ -4,7 +4,7 @@
 
 </div>
 
-Some Shots :D
+*Some Shots :D*
 
 <img src='Screenshots/2.png'>
 
