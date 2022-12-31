@@ -103,8 +103,8 @@ ForegroundPositive=76,175,80
 ForegroundVisited=173,101,175
 
 [General]
-ColorScheme=SnowDark
-Name=SnowDark
+ColorScheme=Snow-Dark
+Name=Snow-Dark
 shadeSortColumn=true
 
 [KDE]

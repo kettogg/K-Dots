@@ -1,6 +1,6 @@
 PREFIX = /usr
 DESTDIR ?=
-INSTALL_DIR ?= $(DESTDIR)$(PREFIX)/share/themes/SnowGtk
+INSTALL_DIR ?= $(DESTDIR)$(PREFIX)/share/themes/Snow-Gtk
 all:
 	npm install && npm run build
 
