@@ -1,0 +1,34 @@
+#!/bin/bash
+
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+sudo pacman -S kdecoration qt5-declarative qt5-x11extras cmake make gcc extra-cmake-modules noto-fonts-emoji noto-fonts-cjk
+
+mkdir ~/.local/share/{plasma,color-schemes}
+mkdir ~/.local/share/plasma/desktoptheme
+
+#curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+cd ~/Downloads/Kde-Configs/Application-Style/Lightly && mkdir build && cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF ..
+make
+sudo make install
+
+cd ~/Downloads/Kde-Configs/Gtk-Theme/Snow-Gtk/
+sudo make && sudo make install
+
+sudo cp -r ~/Downloads/Kde-Configs/Plasma-Style/Snow-Lyra ~/.local/share/plasma/desktoptheme/
+
+sudo cp ~/Downloads/Kde-Configs/Color-Schemes/Snow-Dark.colors ~/.local/share/color-schemes/
+
+cd ~/Downloads/Kde-Configs/Window-Decoration/Klassy
+./install.sh
+
+yay -S ttf-poppins ttf-iosevka-nerd
+
+cd ~/Downloads/Kde-Configs/ST2/
+./compilest
+
+
