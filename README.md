@@ -1,23 +1,26 @@
 
 # Kde-Configs
 
-My KDE Plasma setup with Arch Linux :3
-
-
-
-
+My KDE Plasma setup with Arch Linux :)
 
 ## Screenshots
 
-![Screenshot 2](Screenshots/2.png)
+<details>
+  <summary>Old Screenshots</summary>
+  ![Screenshot 2](Screenshots/2.png)
 
-![Screenshot 3](Screenshots/3.png)
+  ![Screenshot 3](Screenshots/3.png)
+  
+  ![Screenshot 4](Screenshots/4.png)
 
-![Screenshot 4](Screenshots/4.png)
+  ![Screenshot 5](Screenshots/5.png)
+</details>
 
-![Screenshot 5](Screenshots/5.png)
+![Screenshot 1N](.github/Screenshots/Screenshot1N.png)
 
+![Screenshot 2N](.github/Screenshots/Screenshot2N.png)
 
+![Screenshot 3N](.github/Screenshots/Screenshot3N.png)
 
 
 ## Installation
@@ -106,12 +109,8 @@ sudo pacman -S kdecoration qt5-declarative qt5-x11extras cmake make gcc extra-cm
    ./compilest
    ```
 
-   
-
-
-
 ## Summary
-+ **Terminal** - Suckless's st ([My version](https://github.com/ryuJin25/Kde-Configs/tree/main/ST))
++ **Terminal** - Kitty and Suckless St([My version](https://github.com/ryuJin25/Kde-Configs/tree/main/ST))
 + **Shell** - zsh (With [Oh-my-zsh](https://ohmyz.sh/) + [Powerlevel10k](https://github.com/romkatv/powerlevel10k))
 + **Application Style** - [Lightly](https://github.com/Luwx/Lightly)
 + **Plasma Style** - [Modified](https://github.com/ryuJin25/Kde-Configs/tree/main/Plasma-Style) Version of Lyra-Dark
