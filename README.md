@@ -5,22 +5,23 @@ My KDE Plasma setup with Arch Linux :)
 
 ## Screenshots
 
-<details>
-  <summary>Old Screenshots</summary>
-  ![Screenshot 2](Screenshots/2.png)
-
-  ![Screenshot 3](Screenshots/3.png)
-  
-  ![Screenshot 4](Screenshots/4.png)
-
-  ![Screenshot 5](Screenshots/5.png)
-</details>
-
 ![Screenshot 1N](.github/Screenshots/Screenshot1N.png)
 
 ![Screenshot 2N](.github/Screenshots/Screenshot2N.png)
 
 ![Screenshot 3N](.github/Screenshots/Screenshot3N.png)
+
+<details>
+  <summary>Old Screenshots</summary>
+  
+  ![Screenshot 2](.github/Screenshots/2.png)
+
+  ![Screenshot 3](.github/Screenshots/3.png)
+  
+  ![Screenshot 4](.github/Screenshots/4.png)
+
+  ![Screenshot 5](.github/Screenshots/5.png)
+</details>
 
 
 ## Installation
