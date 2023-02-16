@@ -92,13 +92,12 @@ sudo pacman -S kdecoration qt5-declarative qt5-x11extras cmake make gcc extra-cm
    spicetify apply
    ```
 2. Firefox
-   Open Firefox, Type about:support, and open the Profile Directoy
-   ```bash
-   Open up the Terminal in Profile Directory
-   sudo cp -r ~/Downloads/Kde-Configs/Firefox/chrome .
-   ```
-   Go to about:config and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`,
-   Restart Firefox.  
+   - Open Firefox, Type about:support, and open up the terminal in the `Profile` directory.
+     ```bash
+     sudo cp -r ~/Downloads/Kde-Configs/Firefox/chrome .
+     ```
+   - Go to about:config and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
+   - Restart Firefox.  
 3. Neofetch
    ```bash
    sudo pacman -S neofetch
