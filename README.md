@@ -87,21 +87,21 @@ sudo pacman -S kdecoration qt5-declarative qt5-x11extras cmake make gcc extra-cm
    ```
    Apply Theme
    ```bash
-   sudo cp -r ~/Downloads/Kde-Configs/.Config/Spicetify/Themes/Snow ~/.config/spicetify/Themes/
+   sudo cp -r ~/Downloads/Kde-Configs/Cfg/Spicetify/Themes/Snow ~/.config/spicetify/Themes/
    spicetify config current_theme Snow
    spicetify apply
    ```
 2. Firefox
    - Open Firefox, Type about:support, and open up the terminal in the `Profile` directory.
      ```bash
-     sudo cp -r ~/Downloads/Kde-Configs/Firefox/chrome .
+     sudo cp -r ~/Downloads/Kde-Configs/Firefox/SimpleFox/chrome .
      ```
    - Go to about:config and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
    - Restart Firefox.  
 3. Neofetch
    ```bash
    sudo pacman -S neofetch
-   sudo cp -r ~/Downloads/Kde-Configs/.Config/Neofetch ~/.config/
+   sudo cp -r ~/Downloads/Kde-Configs/Cfg/Neofetch ~/.config/
    ```
 4. Suckless Terminal
    ```bash
@@ -118,8 +118,8 @@ sudo pacman -S kdecoration qt5-declarative qt5-x11extras cmake make gcc extra-cm
 + **Window Decoration** - [Klassy](https://github.com/paulmcauley/klassy)
 + **File Manager** - Dolphin
 + **Firefox** - [CSS](https://github.com/ryuJin25/Kde-Configs/tree/main/Firefox)
-+ **Audio Visualizer** - Cava [Config](https://github.com/ryuJin25/Kde-Configs/tree/main/.Config/Cava)
-+ **Fetch Util** - Neofetch [Config](https://github.com/ryuJin25/Kde-Configs/tree/main/.Config/Neofetch)
++ **Audio Visualizer** - Cava [Config](https://github.com/ryuJin25/Kde-Configs/tree/main/Cfg/Cava)
++ **Fetch Util** - Neofetch [Config](https://github.com/ryuJin25/Kde-Configs/tree/main/Cfg/Neofetch)
 + **Spotify Enhancer** - [Spicetify](https://spicetify.app/docs/advanced-usage/installation/)
 + **Launcher Icon** - [Arch Icon](https://github.com/ryuJin25/Kde-Configs/tree/main/Arch-Icons)
 
