@@ -25,7 +25,9 @@ My KDE Plasma setup with Arch Linux :)
 
 
 ## Installation
+⚠️ Install script Wip ...
 
+Follow manual installation.
 ### Dependencies
 
 ```bash
