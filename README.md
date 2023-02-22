@@ -5,22 +5,32 @@ My KDE Plasma setup with Arch Linux :)
 
 ## Screenshots
 
-![Screenshot 1N](.github/Screenshots/Screenshot1N.png)
+### Havana
 
-![Screenshot 2N](.github/Screenshots/Screenshot2N.png)
+![Screenshot S1](.github/Screenshots/S1.png)
 
-![Screenshot 3N](.github/Screenshots/Screenshot3N.png)
+![Screenshot S2](.github/Screenshots/S2.png)
+
+![Screenshot S3](.github/Screenshots/S3.png)
+
+### Dusk
+
+![Screenshot D1](.github/Screenshots/D1.png)
+
+![Screenshot D2](.github/Screenshots/D2.png)
+
+![Screenshot D3](.github/Screenshots/D3.png)
 
 <details>
-  <summary>Old Screenshots</summary>
+  <summary>Snow-Fox Old</summary>
   
-  ![Screenshot 2](.github/Screenshots/2.png)
+  ![Screenshot F2](.github/Screenshots/F2.png)
 
-  ![Screenshot 3](.github/Screenshots/3.png)
+  ![Screenshot F3](.github/Screenshots/F3.png)
   
-  ![Screenshot 4](.github/Screenshots/4.png)
+  ![Screenshot F4](.github/Screenshots/F4.png)
 
-  ![Screenshot 5](.github/Screenshots/5.png)
+  ![Screenshot F5](.github/Screenshots/F5.png)
 </details>
 
 

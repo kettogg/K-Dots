@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.3 (unknown)"
+   sodipodi:docname="document-import.svg">
+  <defs
+     id="defs3051">
+    <style
+       type="text/css"
+       id="current-color-scheme">
+    .ColorScheme-Text {
+    color:#4d4d4d;
+    }
+    </style>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="53.125"
+     inkscape:cx="10.377012"
+     inkscape:cy="8.9336949"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:showpageshadow="false"
+     borderlayer="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1378"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4136"
+       empspacing="2"
+       originx="-3"
+       originy="-3.0000174" />
+    <sodipodi:guide
+       position="0,14.999983"
+       orientation="0,1"
+       id="guide4140"
+       inkscape:label="Icon Max Height"
+       inkscape:color="rgb(233,30,99)"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,0.9999826"
+       orientation="0,1"
+       id="guide4142"
+       inkscape:label="Icon Baseline"
+       inkscape:color="rgb(233,30,99)"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="8,-1.74e-05"
+       orientation="1,0"
+       id="guide4144"
+       inkscape:label="Center Vertical"
+       inkscape:color="rgb(221,44,0)"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="16,7.9999826"
+       orientation="0,1"
+       id="guide4146"
+       inkscape:label="Center Horizontal"
+       inkscape:color="rgb(221,44,0)"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3,-1033.3622)">
+    <path
+       style="fill:currentColor;fill-opacity:1;stroke:none" class="ColorScheme-Text"
+       d="M 4 1 C 2.891981 1 2 1.892 2 3 L 2 10 L 3 10 L 3 3 C 3 2.446 3.445981 2 4 2 L 9 2 L 9 5.5 C 9 5.777 9.223 6 9.5 6 L 13 6 L 13 10 L 13 13 C 13 13.554 12.554019 14 12 14 L 9 14 L 8 14 L 8 15 L 12 15 C 13.108019 15 14 14.108 14 13 L 14 10 L 14 5.5 L 14 5 L 10.001953 1.0019531 L 10 1.0019531 L 9.5136719 1.0019531 L 9.5 1.0019531 L 4 1 z M 10 2.4121094 L 12.587891 5 L 10 5 L 10 2.4121094 z M 4.5644531 10.005859 L 4.5644531 10.009766 C 4.2594151 9.9668656 3.9425469 10.220078 3.9980469 10.580078 L 3.9980469 12.003906 L 1.5 12.003906 C 1.290404 12.003906 1.1135615 12.1309 1.0390625 12.3125 C 1.0151825 12.3707 1 12.434953 1 12.501953 C 1.00053 12.569453 1.0143025 12.632594 1.0390625 12.683594 C 1.1135615 12.865194 1.290404 12.992188 1.5 12.992188 L 3.9980469 12.992188 L 3.9980469 14.416016 C 3.9240469 14.895916 4.5127655 15.186691 4.8515625 14.837891 L 6.828125 12.869141 L 6.8496094 12.849609 C 6.8674994 12.831609 6.875735 12.807109 6.890625 12.787109 C 6.914685 12.755109 6.9410412 12.726453 6.9570312 12.689453 C 6.9746212 12.648453 6.9799281 12.604547 6.9863281 12.560547 C 6.9894281 12.538547 6.999931 12.519094 7 12.496094 C 6.99993 12.472094 6.9894281 12.453641 6.9863281 12.431641 C 6.9799281 12.387741 6.9746213 12.343734 6.9570312 12.302734 C 6.9410312 12.265734 6.914685 12.237078 6.890625 12.205078 C 6.875735 12.185078 6.8674994 12.161531 6.8496094 12.144531 L 6.828125 12.123047 L 4.8515625 10.154297 C 4.7668635 10.066897 4.6661331 10.019859 4.5644531 10.005859 z "
+       transform="translate(3,1033.3622)"
+       id="path826" />
+  </g>
+</svg>
