@@ -13,6 +13,9 @@ My KDE Plasma setup with Arch Linux :)
 
 ![Screenshot S3](.github/Screenshots/S3.png)
 
+![Screenshot S4](.github/Screenshots/S4.png)
+
+
 ### Dusk
 
 ![Screenshot D1](.github/Screenshots/D1.png)
