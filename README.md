@@ -3,6 +3,8 @@
 
 My KDE Plasma setup with Arch Linux :)
 
+⚠️ The [Installation](https://github.com/syylvette/Kde-Configs#installation) section has not been updated, just have changed folder names that you might have to look for. Also check the pinned issues for global menu and other configuration!
+
 ## Screenshots
 
 ### Havana
@@ -125,8 +127,8 @@ sudo pacman -S kdecoration qt5-declarative qt5-x11extras cmake make gcc extra-cm
    ```
 
 ## Summary
-+ **Terminal** - Kitty and Suckless St([My version](https://github.com/ryuJin25/Kde-Configs/tree/main/ST))
-+ **Shell** - zsh (With [Oh-my-zsh](https://ohmyz.sh/) + [Powerlevel10k](https://github.com/romkatv/powerlevel10k))
++ **Terminal** - WezTerm and Suckless St([St config](https://github.com/ryuJin25/Kde-Configs/tree/main/ST))
++ **Shell** - [Bash config](https://github.com/syylvette/Kde-Configs/blob/main/.bashrc) | zsh (With [Oh-my-zsh](https://ohmyz.sh/) + [Powerlevel10k](https://github.com/romkatv/powerlevel10k))
 + **Application Style** - [Lightly](https://github.com/Luwx/Lightly)
 + **Plasma Style** - [Modified](https://github.com/ryuJin25/Kde-Configs/tree/main/Plasma-Style) Version of Lyra-Dark
 + **Colors** - MateriaDark [Modified](https://github.com/ryuJin25/Kde-Configs/tree/main/Color-Schemes)
