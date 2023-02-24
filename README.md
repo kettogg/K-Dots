@@ -139,7 +139,7 @@ sudo pacman -S kdecoration qt5-declarative qt5-x11extras cmake make gcc extra-cm
 + **Fetch Util** - Neofetch [Config](https://github.com/ryuJin25/Kde-Configs/tree/main/Cfg/Neofetch)
 + **Spotify Enhancer** - [Spicetify](https://spicetify.app/docs/advanced-usage/installation/)
 + **Launcher Icon** - [Arch Icon](https://github.com/ryuJin25/Kde-Configs/tree/main/Arch-Icons)
-+ **VS Code theme** - [Theme](https://marketplace.visualstudio.com/items?itemName=Manas.paradise-vscode)
++ **VS Code theme** - [Paradise](https://marketplace.visualstudio.com/items?itemName=Manas.paradise-vscode)
 
 ### Widgets
 + [Clear Clock](https://github.com/qewer33/ClearClock)
