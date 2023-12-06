@@ -27,7 +27,7 @@
 
 | <b> Havana </b>                                                                                                      |
 | -------------------------------------------------------------------------------------------------------------------- |
-| <a href="https://github.com/re1san/Kde-Configs/tree/havana"><img src=".github/assests/S1.png"  alt="havana"></a>     |
+| <a href="https://github.com/re1san/Kde-Configs/tree/havana"><img src="https://github.com/re1san/Kde-Configs/tree/havana/.github/assests/S1.png"  alt="havana"></a>     |
 
 | <b> Nx-Desktop </b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
