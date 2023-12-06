@@ -25,10 +25,10 @@
 | -------------------------------------------------------------------------------------------------------------------- |
 | <a href="https://github.com/re1san/Kde-Configs"><img src=".github/assests/mori.png"  alt="mori"></a>                 |
 
-| <b>Havana)</b>                                                                                                       |
+| <b> Havana </b>                                                                                                      |
 | -------------------------------------------------------------------------------------------------------------------- |
-| <a href="https://github.com/re1san/Kde-Configs/tree/havana"><img src=".github/assests/havana.png"  alt="havana"></a> |
+| <a href="https://github.com/re1san/Kde-Configs/tree/havana"><img src=".github/assests/S1.png"  alt="havana"></a>     |
 
-| <b>Nx-Desktop</b>                                                                                                    |
+| <b> Nx-Desktop </b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
 | <a href="https://github.com/re1san/Kde-Configs/tree/nx-desk"><img src=".github/assests/nx.png"  alt="nx-desk"></a>   |
