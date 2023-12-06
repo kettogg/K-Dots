@@ -1,10 +1,11 @@
-# Kde-Confs
+
 <div align="center">
   <h1> Kde-Dots </h1>
   <p> Aesthetic dots for Kde Plasma ! ?</p>
 </div>
 
 <div align="center">
+
 ![GitHub Top Language](https://img.shields.io/github/issues/re1san/Kde-Configs?color=6d92bf&style=for-the-badge)
 ![Cool](https://img.shields.io/badge/WM-Kwin-da696f?style=for-the-badge)
 ![Bloat](https://img.shields.io/badge/Bloated-Yes-c585cf?style=for-the-badge)
@@ -15,6 +16,7 @@
 
 > [!Important]
 > Installation section is outdated, will update soon :)
+
 > [!Note]
 > Themes moved to their respective branch
 
