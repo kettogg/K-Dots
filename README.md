@@ -2,9 +2,11 @@
 
 Newer and fresh theme Mori
 
-### Installation
+### Shot
 
 ![Screenshot Mori](.github/assests/mori.png)
+
+### Installation
 
 **TO-Do**
 
