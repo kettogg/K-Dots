@@ -1,5 +1,5 @@
-# NX-Desktop
+## NX-Desktop
 
 *Too lazy to update installation doc :)*
 
-![Screenshot nx-1](.github/assests/nx-1.png)
+![Screenshot NX](.github/assests/nx.png)
