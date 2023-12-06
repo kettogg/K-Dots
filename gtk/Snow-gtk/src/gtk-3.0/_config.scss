@@ -1,0 +1,6 @@
+@import "./colors";
+
+*:selected {
+    color: #efefef;
+    background-color: $primary-accent;
+}
