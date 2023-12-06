@@ -8,7 +8,7 @@ Newer and fresh theme Mori
 
 ### Installation
 
-**TO-Do**
+**TO-DO**
 
 *But too lazy to do lol...*
 
