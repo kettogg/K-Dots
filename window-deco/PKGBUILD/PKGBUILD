@@ -1,0 +1,35 @@
+pkgname=nx-window-deco
+pkgver=r60.fbfcece
+pkgrel=1
+pkgdesc='NX Window Decoration'
+arch=(x86_64 i686)
+url="https://github.com/nx-desktop/nx-window-deco"
+license=(LGPL3)
+depends=(kwin)
+makedepends=(git cmake extra-cmake-modules)
+provides=(nx-window-deco)
+conflicts=(maui-deco)
+source=("${pkgname}::git+https://gitlab.com/nitrux/nx-desktop/maui-deco")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$pkgname"
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+build() {
+  
+   cd "$pkgname"
+   cmake  \
+            -DCMAKE_INSTALL_PREFIX=/usr \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DKDE_INSTALL_LIBDIR=lib \
+            -DBUILD_TESTING=OFF \
+            -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
+    make
+}
+
+package() {
+  cd "$pkgname"
+  make DESTDIR="$pkgdir" install
+}

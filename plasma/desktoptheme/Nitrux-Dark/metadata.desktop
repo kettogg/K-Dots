@@ -1,0 +1,21 @@
+[Desktop Entry]
+Comment[es_MX]=Tema de Nitrux para Plasma 5.
+Name[es_MX]=Nitrux Oscuro
+Name=Nitrux Dark
+X-KDE-PluginInfo-Author=Uri Herrera
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-Depends=plasma-desktop
+X-KDE-PluginInfo-Email=uri_herrera@nxos.org
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=CC BY-SA 4.0
+X-KDE-PluginInfo-Name=Nitrux
+X-KDE-PluginInfo-Version=0.1.1
+X-KDE-PluginInfo-Website=
+X-Plasma-API=5.0
+comment=Nitrux Plasma 5 Theme
+
+[Wallpaper]
+defaultFileSuffix=.png
+defaultWallpaperTheme=Cask
+defaultWidth=5120
+defaultHeight=2880

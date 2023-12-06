@@ -1,0 +1,100 @@
+# Copyright (C) 2016 Harald Sitter <sitter@kde.org>
+# Copyright (C) 2016 Uri Herrera <uri_herrera@nitrux.in>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; either version 3 of
+# the License or any later version accepted by the membership of 
+# KDE e.V. (or its successor approved by the membership of KDE
+# e.V.), which shall act as a proxy defined in Section 14 of
+# version 3 of the license.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# Global Property
+# General settings
+title-text: ""
+title-font: "DejaVu Sans Mono Regular 12"
+
+message-font: "DejaVu Sans Mono Regular 12"
+message-color: "#212121"
+message-bg-color: "#B0BEC5" # TODO: whatever this is for?
+
+desktop-image: "grub_background.png" # background
+
+terminal-box: "terminal/terminal_*.png" # FIXME: after selection the terminal box shows up. no clue why.
+terminal-font: "DejaVu Sans Mono Regular 12"
+
+# title
+# NOTE: can't put this in a vbox because GRUB is crap and item highlighting
+#   is broken if you put the boot_menu in a vbox...
+# TODO: file bug report
++ label { 
+    width = 392
+    top = 50%-196
+    left = 50%-196
+    text = "Select Operating System"
+    font = "DejaVu Sans Mono Regular 32"
+    color = "#B0BEC5"
+}
+
+# Show the boot menu
++ boot_menu {
+    item_font =  "DejaVu Sans Mono Bold 12"
+    left = 50%-200
+    width = 400
+    top = 50%-150
+    height = 300
+    item_color = "#212121"
+    selected_item_color = "#212121"
+    icon_width = 4
+    icon_height = 0
+    item_height = 33
+    item_padding = 1
+    item_icon_space = 0
+    item_spacing = 1
+    selected_item_color = "#212121"
+    selected_item_pixmap_style = "highlight_*.png"
+}
+
+# Show a styled horizontal progress bar
++ progress_bar {
+    id = "__timeout__"
+    left = 0
+    top = 100%-32
+    width = 100%
+    height = 32
+    show_text = false
+    bar_style = "progress_bar_*.png"
+    highlight_style = "progress_bar_hl_*.png"
+}
+
+# Show text progress bar
++ progress_bar {
+    id = "__timeout__"
+    left = 100%-126
+    top = 100%-32
+    height = 32
+    show_text = true
+    font = "DejaVu Sans Mono Regular 12"
+    text_color = "#212121"
+    align = "right"
+    text = "@TIMEOUT_NOTIFICATION_MIDDLE@"
+    bar_style = "progress_bar2_*.png"    
+}
+
+# Show an informational message.
++ label { 
+    top = 100%-24
+    left = 16
+    text = "[Enter] Boot the selected OS [C] GRUB Command Line"
+    font = "DejaVu Sans Mono Regular 12"
+    color = "#212121"
+}
+

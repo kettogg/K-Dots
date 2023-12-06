@@ -1,0 +1,14 @@
+[SddmGreeterTheme]
+Name=Nitrux Dark
+Description=Nitrux Dark SDDM Theme.
+Author=Uri Herrera
+License=CC-BY-SA
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/nx-desktop/nx-plasma-look-and-feel
+Screenshot=screenshot.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=uri_herrera@nxos.org
+Theme-API=2.0

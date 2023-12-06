@@ -1,0 +1,12 @@
+Source: nx-window-deco
+Section: KDE
+Priority: optional
+Maintainer: Uri Herrera <uri_herrera@nxos.org>
+Build-Depends: debhelper (>=9), cmake, extra-cmake-modules, libkdecorations2-dev, libkf5coreaddons-dev, libkf5guiaddons-dev, libkf5configwidgets-dev, libkf5windowsystem-dev, gettext, libqt5x11extras5-dev, libkf5iconthemes-dev
+Standards-Version: 3.9.6
+
+Package: nx-window-deco
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, kwin
+Description: A fork of SierraBreezeEnhanced to replace the Nitrux Aurorae window decoration.
+ Window decoration for Nitrux.

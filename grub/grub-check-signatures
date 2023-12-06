@@ -1,0 +1,129 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+# Check if we are on an EFI system
+efivars=/sys/firmware/efi/efivars
+secureboot_var=SecureBoot-8be4df61-93ca-11d2-aa0d-00e098032b8c
+moksbstatert_var=MokSBStateRT-605dab50-e046-4300-abb6-3dd810dd8b23
+tmpdir=$(mktemp -d)
+
+on_secure_boot() {
+	# Validate any queued actions before we go try to do them.
+	local moksbstatert=0
+
+	if ! [ -d $efivars ]; then
+		return 1
+	fi
+
+	if ! [ -f $efivars/$secureboot_var ] \
+		|| [ "$(od -An -t u1 $efivars/$secureboot_var | awk '{ print $NF }')" -ne 1 ]
+	then
+		return 1
+	fi
+
+	if [ -f /proc/sys/kernel/moksbstate_disabled ]; then
+		moksbstatert=$(cat /proc/sys/kernel/moksbstate_disabled 2>/dev/null || echo 0)
+	elif [ -f $efivars/$moksbstatert_var ]; then
+		# MokSBStateRT set to 1 means validation is disabled
+		moksbstatert=$(od -An -t u1 $efivars/$moksbstatert_var | \
+					   awk '{ print $NF; }')
+	fi
+
+	if [ $moksbstatert -eq 1 ]; then
+		return 1
+	fi
+
+	return 0
+}
+
+# Retrieve the keys we do trust from PK, DB, KEK, and MokList.
+extract_known_keys() {
+	# Make the Canonical CA cert available for validation too; in case
+	# MokListRT is empty due to a bug.
+	cp /usr/share/grub/canonical-uefi-ca.crt $tmpdir
+
+	# Extract known UEFI certs from firmware variables
+	( cd $tmpdir; \
+		mokutil --export --db >/dev/null 2>/dev/null; \
+		mokutil --export --mok >/dev/null 2>/dev/null; )
+	find $tmpdir -name "*.der" -exec openssl x509 -inform der -in {} -outform pem -out {}.crt  \;
+}
+
+# Check if a given kernel image is signed
+is_signed() {
+	tmp=$(mktemp)
+	sbattach --detach $tmp $1 >/dev/null 2>/dev/null 	# that's ugly...
+	test "$(wc -c < $tmp)" -ge 16	# Just _some_ minimum size
+	result=$?
+	if [ $result -eq 0 ]; then
+		sig_subject=$(openssl pkcs7 -inform der -in $tmp -print_certs | openssl x509 -noout -text | grep Subject: )
+	fi
+	rm $tmp
+	if [ $result -eq 0 ]; then
+		for crtfile in $tmpdir/*.crt; do
+			sbverify --cert $crtfile $1 >/dev/null 2>/dev/null
+			result=$?
+			if [ $result -eq 0 ]; then
+				return $result;
+			fi
+		done
+		echo "$1 is signed, but using an unknown key:" >&2
+		echo "$sig_subject" >&2
+	else
+		echo "$1 is unsigned." >&2
+	fi
+	return $result
+}
+
+# Check that our current kernel and every newer one is signed
+find_unsigned() {
+	uname_r="$(uname -r)"
+	for kernel in $(ls -1 /boot/vmlinuz-* | sort -V -r); do
+		# no kernels :(
+		if [ "$kernel" = "/boot/vmlinuz-*" ]; then
+			break
+		fi
+		this_uname_r="$(echo "$kernel" | sed -r 's#^/boot/vmlinuz-(.*)#\1#; s#\.efi\.signed$##')"
+		if dpkg --compare-versions "$this_uname_r" lt "$uname_r"; then
+			continue
+		fi
+		if [ -e "$kernel.efi.signed" ]; then
+			continue
+		fi
+		if ! is_signed $kernel; then
+			echo "$this_uname_r"
+		fi
+	done
+}
+
+# Only reached from show_warning
+error() {
+	echo "E: Your kernels are not signed with a key known to your firmware. This system will fail to boot in a Secure Boot environment." >&2
+	exit 1
+}
+
+# Either shows a debconf note or prints an error with error() above if
+# that fails
+show_warning() {
+	# kernels should be an indented list of one version per line
+	escaped="$(printf "%s" "$unsigned" | sed "s#^#     #" | debconf-escape -e )"
+	db_capb escape
+	db_settitle grub2/unsigned_kernels_title || error
+	db_fset grub2/unsigned_kernels seen 0 || error
+	db_subst grub2/unsigned_kernels unsigned_versions "$escaped" || error
+	db_input critical grub2/unsigned_kernels || error
+	db_go || error
+	error
+}
+
+if on_secure_boot; then
+	extract_known_keys
+	unsigned="$(find_unsigned)"
+	if [ -n "$unsigned" ]; then
+		show_warning "$unsigned"
+	fi
+	rm -rf "$tmpdir"
+fi

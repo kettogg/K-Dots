@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Nitrux Dark (Aurorae)
+Comment=Nitrux Dark window decoration theme for Aurorae.
+Name[es_MX]=Nitrux Oscuro (Aurorae)
+Comment[es_MX]=Decoracion de ventana Nitrux Oscuro para Aurorae.
+
+X-KDE-PluginInfo-Author=Uri Herrera 
+X-KDE-PluginInfo-Email=uri_herrera@nxos.org
+X-KDE-PluginInfo-Name=org.kwin.aurorae.nitrux
+X-KDE-PluginInfo-Version=1
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=CC BY SA
+X-KDE-PluginInfo-EnabledByDefault=true
+
+X-KDE-ServiceTypes=KWin/Decoration
+X-KWin-Config-TranslationDomain=kwin_clients
+Type=Service

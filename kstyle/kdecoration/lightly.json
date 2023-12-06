@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "EnabledByDefault": true,
+        "Id": "org.kde.lightly",
+        "Name": "Lightly",
+        "ServiceTypes": [
+            "org.kde.kdecoration2"
+        ]
+    },
+    "org.kde.kdecoration2": {
+        "blur": true,
+        "kcmodule": true,
+        "recommendedBorderSize": "None"
+    }
+}
