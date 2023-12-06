@@ -21,7 +21,14 @@
 > Themes moved to their respective branch
 
 ## Showcase
-| <b>Mori</b>                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------ |
-| <a href="https://github.com/re1san/Kde-Configs"><img src=".github/assests/mori.png"  alt="mori"></a>                    |
+| <b>Mori森 (New)</b>                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------- |
+| <a href="https://github.com/re1san/Kde-Configs"><img src=".github/assests/mori.png"  alt="mori"></a>                 |
 
+| <b>Havana)</b>                                                                                                       |
+| -------------------------------------------------------------------------------------------------------------------- |
+| <a href="https://github.com/re1san/Kde-Configs/tree/havana"><img src=".github/assests/havana.png"  alt="havana"></a> |
+
+| <b>Nx-Desktop</b>                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------- |
+| <a href="https://github.com/re1san/Kde-Configs/tree/nx-desk"><img src=".github/assests/nx.png"  alt="nx-desk"></a>   |
