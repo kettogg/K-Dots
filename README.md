@@ -1,5 +1,5 @@
 
-# Kde-Configs
+## Havana/Dusk
 
 **Outdated Doc, too lazy to update :)**
 
@@ -7,37 +7,34 @@ My KDE Plasma setup with Arch Linux :)
 
 ⚠️ The [Installation](https://github.com/syylvette/Kde-Configs#installation) section has not been updated, just have changed folder names that you might have to look for. Also check the pinned issues for global menu and other configuration!
 
-## Screenshots
-
-### Nx-desktop
-![Screenshot N1](.github/Screenshots/N1.png)
+## Showcase
 
 ### Havana
 
-![Screenshot S1](.github/Screenshots/S1.png)
+![Screenshot S1](.github/assests/S1.png)
 
-![Screenshot S2](.github/Screenshots/S2.png)
+![Screenshot S2](.github/assests/S2.png)
 
-![Screenshot S3](.github/Screenshots/S3.png)
+![Screenshot S3](.github/assests/S3.png)
 
-![Screenshot S4](.github/Screenshots/S4.png)
+![Screenshot S4](.github/assests/S4.png)
 
 <details>
-  <summary>Old</summary>
+  <summary>Dusk</summary>
 
-  ![Screenshot D1](.github/Screenshots/D1.png)
+  ![Screenshot D1](.github/assests/D1.png)
+ 
+  ![Screenshot D2](.github/assests/D2.png)
 
-  ![Screenshot D2](.github/Screenshots/D2.png)
+  ![Screenshot D3](.github/assests/D3.png)
 
-  ![Screenshot D3](.github/Screenshots/D3.png)
+  ![Screenshot F2](.github/assests/F2.png)
 
-  ![Screenshot F2](.github/Screenshots/F2.png)
-
-  ![Screenshot F3](.github/Screenshots/F3.png)
+  ![Screenshot F3](.github/assests/F3.png)
   
-  ![Screenshot F4](.github/Screenshots/F4.png)
+  ![Screenshot F4](.github/assests/F4.png)
 
-  ![Screenshot F5](.github/Screenshots/F5.png)
+  ![Screenshot F5](.github/assests/F5.png)
 </details>
 
 
