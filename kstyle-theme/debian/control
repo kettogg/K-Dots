@@ -1,0 +1,12 @@
+Source: nx-kstyle-theme
+Section: kde
+Priority: optional
+Maintainer: Uri Herrera <uri_herrera@nxos.org>
+Build-Depends: libkf5config-dev, libkdecorations2-dev, libqt5x11extras5-dev, qtdeclarative5-dev, libkf5guiaddons-dev, libkf5configwidgets-dev, libkf5windowsystem-dev, libkf5coreaddons-dev, libkf5iconthemes-dev, frameworkintegration, libkf5kcmutils-dev, libkf5style-dev, libkf5wayland-dev
+Standards-Version: 3.9.6
+
+Package: nx-kstyle-theme
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, kwin
+Description: A fork of Lightly to replace the Nitrux Kvantum themes.
+ Kstyle theme for Nitrux.

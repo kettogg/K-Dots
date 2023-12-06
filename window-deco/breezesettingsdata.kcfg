@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kcfg SYSTEM "http://www.kde.org/standards/kcfg/1.0/kcfg.dtd">
+<kcfg>
+  <kcfgfile name="breezerc"/>
+
+  <!-- common options -->
+  <group name="Common">
+
+    <!-- shadow -->
+    <entry name="ShadowSize" type = "Enum">
+      <choices>
+          <choice name="ShadowNone"/>
+          <choice name="ShadowSmall"/>
+          <choice name="ShadowMedium"/>
+          <choice name="ShadowLarge"/>
+          <choice name="ShadowVeryLarge"/>
+      </choices>
+      <default>ShadowMedium</default>
+    </entry>
+
+    <entry name="ShadowStrength" type = "Int">
+      <default>255</default>
+      <min>25</min>
+      <max>255</max>
+    </entry>
+
+    <entry name="ShadowColor" type = "Color">
+       <default>0, 0, 0</default>
+    </entry>
+
+    <entry name="SpecificShadowsInactiveWindows" type = "Bool">
+      <default>false</default>
+    </entry>
+
+    <entry name="ShadowSizeInactiveWindows" type = "Enum">
+      <choices>
+        <choice name="ShadowNoneInactiveWindows"/>
+        <choice name="ShadowSmallInactiveWindows"/>
+        <choice name="ShadowMediumInactiveWindows"/>
+        <choice name="ShadowLargeInactiveWindows"/>
+        <choice name="ShadowVeryLargeInactiveWindows"/>
+      </choices>
+      <default>ShadowLargeInactiveWindows</default>
+    </entry>
+
+    <entry name="ShadowStrengthInactiveWindows" type = "Int">
+      <default>255</default>
+      <min>25</min>
+      <max>255</max>
+    </entry>
+
+    <entry name="ShadowColorInactiveWindows" type = "Color">
+      <default>0, 0, 0</default>
+    </entry>
+
+  </group>
+
+  <group name="Windeco">
+
+    <!-- border size -->
+    <!--
+      this one is used only for window specific settings, since the default is globally set by kwin
+      the enumeration must be kept in sync with kwin's global settings
+    -->
+    <entry name="BorderSize" type = "Enum">
+      <choices>
+          <choice name="BorderNone" />
+          <choice name="BorderNoSides" />
+          <choice name="BorderTiny" />
+          <choice name="BorderNormal" />
+          <choice name="BorderLarge" />
+          <choice name="BorderVeryLarge" />
+          <choice name="BorderHuge" />
+          <choice name="BorderVeryHuge" />
+          <choice name="BorderOversized" />
+      </choices>
+      <default>BorderTiny</default>
+    </entry>
+
+    <!-- title alignment -->
+    <entry name="TitleAlignment" type="Enum">
+      <choices>
+          <choice name="AlignLeft" />
+          <choice name="AlignCenter" />
+          <choice name="AlignCenterFullWidth" />
+          <choice name="AlignRight" />
+      </choices>
+      <default>AlignCenterFullWidth</default>
+    </entry>
+
+    <!-- button size -->
+    <entry name="ButtonSize" type="Enum">
+      <choices>
+          <choice name="ButtonTiny" />
+          <choice name="ButtonSmall" />
+          <choice name="ButtonDefault" />
+          <choice name="ButtonLarge" />
+          <choice name="ButtonVeryLarge" />
+      </choices>
+      <default>ButtonDefault</default>
+    </entry>
+
+    <!-- button style -->
+    <entry name="ButtonStyle" type="Enum">
+      <choices>
+        <choice name="plasma" />
+        <choice name="mauiStyle" />
+      </choices>
+      <default>mauiStyle</default>
+    </entry>
+
+    <entry name="ButtonSpacing" type = "Int">
+        <default>6</default>
+    </entry>
+
+    <entry name="ButtonPadding" type = "Int">
+       <default>0</default>
+    </entry>
+
+    <entry name="ButtonHOffset" type = "Int">
+      <default>5</default>
+    </entry>
+
+    <!-- hide title bar -->
+    <entry name="HideTitleBar" type = "Enum">
+      <choices>
+        <choice name="Never" />
+        <choice name="MaximizedWindows" />
+        <choice name="AnyMaximization" />
+        <choice name="Always" />
+      </choices>
+      <default>Never</default>
+    </entry>
+
+    <!-- match colors -->
+    <entry name="MatchColorForTitleBar" type = "Bool">
+      <default>true</default>
+    </entry>
+
+    <!-- maximized windows -->
+    <entry name="DrawBorderOnMaximizedWindows" type = "Bool">
+      <default>false</default>
+    </entry>
+
+    <!-- corner radius -->
+    <entry name="CornerRadius" type = "Int">
+      <default>3</default>
+    </entry>
+
+    <!-- size grip -->
+    <entry name="DrawSizeGrip" type = "Bool">
+      <default>false</default>
+    </entry>
+
+    <entry name="TitleBarFont" type = "String"/>
+
+    <!-- animations -->
+    <entry name="AnimationsEnabled" type = "Bool">
+       <default>false</default>
+    </entry>
+
+    <entry name="AnimationsDuration" type = "Int">
+       <default>150</default>
+    </entry>
+
+    <!-- dialogs -->
+    ￼	<entry name="IsDialog" type = "Bool">
+￼	       <default>false</default>
+￼	    </entry>
+
+    <!-- window specific settings -->
+    <entry name="ExceptionType" type="Enum">
+      <choices>
+          <choice name="ExceptionWindowClassName" />
+          <choice name="ExceptionWindowTitle" />
+      </choices>
+      <default>ExceptionWindowClassName</default>
+    </entry>
+
+    <entry name="ExceptionPattern" type = "String"/>
+
+    <entry name="Enabled" type = "Bool">
+      <default>true</default>
+    </entry>
+
+    <entry name="Mask" type = "Int">
+      <default>0</default>
+    </entry>
+
+  </group>
+
+</kcfg>

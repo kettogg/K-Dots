@@ -1,4 +1,4 @@
-# Kde-Confs
+# Kde-Configs
 
-Themes moved to respective branches
+Newer and fresh theme Mori
 

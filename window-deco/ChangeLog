@@ -1,0 +1,342 @@
+V0.9.5
+---------
+
+* Upstream sync: Port away from deprecated Qt::MidButton
+* Upstream sync: use linear animations
+
+V0.9.4
+---------
+
+* Upstream sync: color icons in titlebar if possible
+
+V0.9.3
+---------
+
+* Symmetric and more subtle lighter/darker button outline
+
+V0.9.2
+---------
+
+* Symmetric behavior of darker/ligther coloring
+
+V0.9.1
+---------
+
+* More minimalistic title bar separator
+
+V0.9.0
+---------
+
+* Extended resizing area now applies to the top border as well
+
+V0.9RC
+---------
+
+* Added option for button horizontal offset
+
+* Enhanced resizing area now applies to SBE's tiny border, i.e., the 1 px outline border
+
+* Grip option now applies to to SBE's tiny border, i.e., the 1 px outline border
+
+V0.8.12
+---------
+
+* Fixed regression in exception dialog
+
+V0.8.11
+---------
+
+* Changes to be in sync with upstream Breeze
+
+V0.8.10
+---------
+
+* fix ui warning
+
+V0.8.9
+---------
+
+* added upstream updates from Breeze theme
+
+V0.8.8
+---------
+
+* fix issue #62
+
+V0.8.7
+---------
+
+* minor unison hovering adjustments
+
+V0.8.6
+---------
+
+* fixes #59
+
+V0.8.5
+---------
+
+* removed redundant font settings (see issue #57)
+* improved unison hovering communication with window buttons applet (contributed by @trmdi, thanks!)
+
+V0.8.4
+---------
+
+* improved unison hovering (contributed by @trmdi, thanks!)
+* minor shadow adjustments
+* minor ui fix
+
+V0.8.3
+---------
+
+* Further minor tweak of Dark Aurorae macOS and SBE themes under indirect unison hovering when animation is enabled
+
+V0.8.3
+---------
+
+* Further minor tweak of Dark Aurorae macOS and SBE themes under indirect unison hovering when animation is enabled
+
+V0.8.2
+---------
+
+* Readjustment of corner radius setting
+
+V0.8.1
+---------
+
+* Minor tweak of Dark Aurorae macOS and SBE themes under indirect unison hovering when animation is enabled
+
+V0.8.0
+---------
+
+* Better scaling for disabled animation
+
+V0.7.8
+---------
+
+* Restyled Gnome Theme (Fixes #21)
+
+V0.7.7
+---------
+
+* README update
+* SierraBreezeEnhanced renamed to Sierra Breeze Enhanced
+* Gradients apply to inactive windows but slightlier than to active windows
+* Resize of some Dark Aurorae symbols
+* mac renamed to macOS
+* Some cleaning
+
+V0.7.6
+---------
+
+* Fix issue #49
+* Fix issue #50
+
+V0.7.5
+---------
+
+* Unison Hovering option
+
+V0.7.4
+---------
+
+* Reverting fix for glitches (issue #47) as it does not work consistently
+
+V0.7.3
+---------
+
+* Hovering symbols at unison (mac Sierra style only for now)
+* Fixed window outline adjustment
+* Better support when alpha is disabled
+* Tentative fix for glitches (issue #47)
+
+V0.7.2
+---------
+
+* Further improvement of TitleBar Gradient and Line Separation
+* Added line separation override
+* Button padding applies both horizontally and vertically (nice method to adjust title bar height)
+* Tiny border reduces now to window outline, all other borders move accordingly, normal is prev tiny, big is prev normal, etc.
+* Added hide title bar option under any maximization, including V/H
+
+V0.7.1
+---------
+
+* Improved Behavior of TitleBar Gradient and Line Separation
+
+V0.7.0
+---------
+
+* Rearranged button styles
+* Added macOS styles (Sierra and Dark Aurorae symbols)
+* macOS Dark Aurorae is new default
+* Adapted traffic colors (more similar to macOS Catalina)
+* Thinner ring borders (more similar to macOS Catalina)
+* Added Dark Aurorae symbol styles (color and monochrome)
+* Checked buttons now occupy all available space (including that of animation)
+* Many minor fixes and improved consistency
+
+V0.6.3
+---------
+
+* Three options for hiding window title bars (never, always and only for maximized windows)
+
+V0.6.2
+---------
+
+* Fine-tuning of one-by-one outer rings
+
+V0.6.1
+---------
+
+* Softer outer ring on dark themes
+
+V0.6.0
+---------
+
+* Enabled option to hide title bar
+* Nicer hide title bar behavior (it actually keeps a title bar as minimalistic as it can be to save vertical space; thought for laptops using window appMenu and window buttons in a latte panel)
+* Fixed issue in Symbol Style Minimal
+* Improved outer ring contrast
+* Fixed issue with titlebar color (issue #36)
+
+V0.5.3
+---------
+
+* Better ring outlines
+
+V0.5.2
+---------
+
+* Many fixes to border lines
+
+V0.5.1
+---------
+
+* Fixes broken Corner Radius from added border lines
+
+V0.5.0
+---------
+
+* Arguably better switch between light and dark colors
+* Added border lines (fixes issue 12)
+* Added outline to filled rings (fixes issue 23)
+* Added new Symbol Style Minimal (monocolor; fixes issue 28)
+* Some minor improvements to Gnome Style
+
+V0.4.10
+---------
+
+Full consistency between buttons and foreground text colors
+* Particularly useful when using kwin auto titlebars colors https://github.com/ArturGaspar/kwin_auto_titlebar_colours
+
+V0.4.9
+---------
+
+Reverting the "blur" setting in breeze.json to true
+
+V0.4.8
+---------
+
+Changing "blur" to false in breeze.json as explained in pull request #32
+
+V0.4.7
+---------
+
+* Added a new style
+* Added `Button horizontal padding` in the settings: when using "high" value of corner radius it may be useful to move the buttons a little bit more toward the inside.
+* Aligned a few items in the General tab of the Settings
+
+V0.4.6
+---------
+
+* Changes to be in sync with upstream Breeze
+* Added the checkbox "Only for dialogs" to the exception dialog to support separate settings for dialogs (Ported from BreezeEnhanced).
+
+V0.4.5
+---------
+
+* Scale icon size to resemble buttons size
+* Shadow intrinsics as in vanilla breeze
+* Automatic gradient direction and smoother appearance
+* Added a new restore symbol
+* Added (actually recovered) vanilla breeze button style
+* Added button style similar to adwaita/materia
+* Added Dark-Aurorae button style (with new checked alldesktop symbol)
+* Exchange colors between keepabove and shade
+
+
+V0.4.4
+---------
+
+* Defaulting now to small spacing
+
+V0.4.3
+---------
+
+* Added option to adjust corner radius
+
+V0.4.2
+---------
+
+* Dim buttons of inactive windows under matchTitleBar option for further consistency
+
+V0.4.1
+---------
+
+* Dim inactive window to make them less salient under certain circumstances (issue #11):
+   - Dim title of inactive windows under matchTitleBar option
+   - Dim buttons of inactive windows under (inactive button style && matchTitleBar) options
+
+V0.4
+---------
+
+* Option to override matchTitleBar behavior for specific applications (especially useful for applications such as konsole and qView)
+* Option to override gradients for specific applications
+* Specific shadow properties for inactive windows
+
+V0.3.2
+---------
+
+* Borders opacity further improvement.
+
+V0.3.1
+---------
+
+* Fixed borders opacity.
+* Better description of shadows setting on inactive windows: "Small shadows on inactive windows".
+
+V0.3
+---------
+
+* Added option to display small shadows for inactive windows as a way to make the active window more salient wrt others (issue #4).
+* Ported Match Title Bar Color from Sierra Breeze. It matches the "BackgroundNormal" color under "Windows" section of the color scheme. Title Bar Text Color is manipulated to guarantee visibility (issue #5).
+* Ported Font Weight Combobox from Breeze Enhanced.
+* Other minor fixes and code clean-up.
+
+V0.2
+---------
+
+* Added settings option for decoration style:
+  - distinct decoration for active and inactive windows (default).
+  - use the active decoration also for inactive windows.
+  - use the inactive decoration also for the active window.
+
+V0.1.2
+---------
+
+* Fixed version numbering.
+
+V0.1.1
+---------
+
+* Symbol properties (line colors and width) now apply to the menu button.
+
+V0.1
+---------
+ * First version of the fork (arguably more minimalistic and informative behavior):
+  - non-gray colors do not change.
+  - active window: show symbol on hovering.
+  - inactive window: always show symbol, show ring color on hovering.
+  - application menu button is considered special and stays as in vanilla breeze.
+  - no more option for non macOS-like buttons as it doesn't apply anymore.
