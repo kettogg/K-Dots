@@ -1,7 +1,7 @@
 
 <div align="center">
   <h1> Kde-Dots </h1>
-  <p> Aesthetic dots for Kde Plasma ! ?</p>
+  <p> Aesthetic dots for Kde Plasma!?</p>
 </div>
 
 <div align="center">
@@ -21,6 +21,10 @@
 > Themes moved to their respective branch
 
 ## Showcase
+| <b>Nya</b>                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------- |
+| <a href="https://github.com/re1san/Kde-Configs"><img src=".github/assests/nya-nf.png"  alt="nya"></a>                 |
+
 | <b>Mori森 (New)</b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
 | <a href="https://github.com/re1san/Kde-Configs"><img src=".github/assests/mori.png"  alt="mori"></a>                 |
