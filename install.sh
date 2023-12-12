@@ -43,14 +43,14 @@ else
 fi
 
 #|-----< Cloning repo >-----|#
-echo "[*] Cloning dots in ~/Downloads ..."
+echo "[*] Cloning dots in $CLONE_DIR ..."
 
 if ! [ -d $CLONE_DIR ];
 then
   mkdir -p $CLONE_DIR
 fi
 
-git clone https://github.com/re1san/Kde-Dots.git $CLONE_DIR --depth 1
+git clone https://github.com/re1san/Kde-Dots.git $CLONE_DIR/Kde-Dots/ --depth 1
 
 echo "[*] Dots cloned."
 
@@ -72,7 +72,7 @@ fi
 git switch mori && cd clock-applet
 
 mkdir build && cd build
-cmake -DCMAKE_INSTALL_PREFIX=`kf5-config --localprefix` -DCMAKE_BUILD_TYPE=Release -DLIB_INSTALL_DIR=lib -DKDE_INSTALL_USE_QT_SYS_PATHS=ON ../
+cmake -DCMAKE_INSTALL_PREFIX=`kf5-config --prefix` -DCMAKE_BUILD_TYPE=Release -DLIB_INSTALL_DIR=lib -DKDE_INSTALL_USE_QT_SYS_PATHS=ON ../
 make && make install
 cd .. && rm -rf build
 reset # In kde-dots dir
