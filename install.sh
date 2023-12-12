@@ -50,14 +50,14 @@ then
   mkdir -p $CLONE_DIR
 fi
 
-git clone https://github.com/re1san/Kde-Dots.git $CLONE_DIR/Kde-Dots/ --depth 1
+git clone https://github.com/re1san/Kde-Dots.git $CLONE_DIR/Kde-Dots/
 
 echo "[*] Dots cloned."
 
 #|-----< Install necessary dependencies >-----|#
 echo "[*] Installing dependencies ..."
 
-sudo pacman -S cmake extra-cmake-modules kdecoration qt5-declarative qt5-x11extras
+sudo pacman -S cmake extra-cmake-modules kdecoration qt5-declarative qt5-x11extras less
 
 echo "[*] Deps installed."
 
