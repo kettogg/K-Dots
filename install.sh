@@ -102,7 +102,7 @@ echo "[*] Installing Reversal dark icons ..."
 git clone --depth 1 https://github.com/yeyushengfan258/Reversal-icon-theme.git
 cd Reversal-icon-theme
 chmod +x install.sh
-./install.sh black
+./install.sh -black
 reset
 echo "[*] Done."
 
@@ -149,7 +149,8 @@ if ! [ -d $HOME/.config/latte ];
 then
   mkdir -p $HOME/.config/latte
 fi
-cp -r config/latte/* $HOME/.config/latte/*
+cp config/latte/* $HOME/.config/latte/*
+latte-dock --import-layout $HOME/.config/latte/mori.layout.latte
 echo "[*] Done."
 
 #|-----< Go to Nya branch for terminal configs >-----|#
