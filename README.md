@@ -38,4 +38,10 @@
 | <a href="https://github.com/re1san/Kde-Dots/tree/nx-desk"><img src="https://github.com/re1san/Kde-Configs/raw/nx-desk/.github/assests/nx.png"  alt="nx-desk"></a>   |
 
 ## Credits
-Neofetch config for havana - [LINUXMOBILE](https://github.com/linuxmobile)
+
+Thanks to all these wonderful people for helping me out!
+
+* [Chadcat](https://github.com/chadcat7)
+* [Gwen](https://github.com/elythh)
+* [Nitrux](https://github.com/Nitrux)
+* [Linuxmobile](https://github.com/linuxmobile)
