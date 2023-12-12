@@ -37,6 +37,11 @@
 | -------------------------------------------------------------------------------------------------------------------- |
 | <a href="https://github.com/re1san/Kde-Dots/tree/nx-desk"><img src="https://github.com/re1san/Kde-Configs/raw/nx-desk/.github/assests/nx.png"  alt="nx-desk"></a>   |
 
+
+## Installation
+
+TODO
+
 ## Credits
 
 Thanks to all these wonderful people for helping me out!
