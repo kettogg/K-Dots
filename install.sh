@@ -42,13 +42,27 @@ else
   echo "[*] Git Installed."
 fi
 
-#|-----< Cloning repo >-----|#
-echo "[*] Cloning dots in $CLONE_DIR ..."
+#|-----< Check yay >-----|#
 
 if ! [ -d $CLONE_DIR ];
 then
   mkdir -p $CLONE_DIR
 fi
+
+echo "[*] Installing AUR helper(yay) ..."
+if pkg_installed yay
+then
+  echo "[*] Yay already installed, skipping ..."
+else
+  sudo pacman -S --needed base-devel
+  git clone https://aur.archlinux.org/yay.git $CLONE_DIR/yay/
+  cd $CLONE_DIR/yay
+  makepkg -si
+  echo "[*] Yay Installed."
+fi
+
+#|-----< Cloning repo >-----|#
+echo "[*] Cloning dots in $CLONE_DIR ..."
 
 git clone https://github.com/re1san/Kde-Dots.git $CLONE_DIR/Kde-Dots/
 
@@ -144,13 +158,17 @@ echo "[*] Done."
 #|-----< Latte-dock >-----|#
 
 echo "[*] Installing latte-dock ..."
-sudo pacman -S latte-dock
+sudo pacman -S latte-dock 
 if ! [ -d $HOME/.config/latte ];
 then
   mkdir -p $HOME/.config/latte
 fi
 cp config/latte/* $HOME/.config/latte/*
-latte-dock --import-layout $HOME/.config/latte/mori.layout.latte
+#latte-dock --import-layout $HOME/.config/latte/Mori.layout.latte
+echo "[*] Done."
+
+echo "[*] Installing latte seperator ..."
+yay -S plasma5-applets-latte-separator
 echo "[*] Done."
 
 #|-----< Go to Nya branch for terminal configs >-----|#
@@ -182,7 +200,31 @@ sudo pacman -S ttf-iosevka-nerd
 cp -r fonts/*  $HOME/.local/share/fonts/
 cp -r wall/* $HOME/.local/share/wallpapers/
 
+#|-----< Firefox >-----|#
+read -p "[*] Do you want to install firefox and its config? (y/n): " choice
+
+if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
+    echo "Installing Firefox ..."
+    sudo pacman -S firefox
+    echo "[*] Installing Firefox config ..."
+    cp -r firefox/* $HOME/.mozilla/firefox/*.default-release/
+    echo "[*] Done."
+else
+    echo "[*] Firefox installation skipped."
+fi
+
 echo "[*] Wrapping up ..."
+
+echo "[*] Launching Latte-dock ..."
+latte-dock --import-layout $HOME/.config/latte/Mori.layout.latte
+
+# IG Just do it manually ...
+# echo "[*] Applying plasma themes ..."
+
+# plasma-apply-wallpaperimage $HOME/.local/share/wallpapers/Nya.png
+# plasma-apply-colorscheme $HOME/.local/share/color-schemes/MoriDark.colors
+# plasma-apply-desktoptheme $HOME/.local/share/plasma/desktoptheme/Mori
+# plasma-apply-cursortheme $HOME/.local/share/icons/
 
 cat<<"EOF"
 
@@ -192,4 +234,4 @@ cat<<"EOF"
 
 EOF
 
-echo "Follow the README for next steps, Thankyou."
+echo "Follow the README for next steps, Thankyou!"
