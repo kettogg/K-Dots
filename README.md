@@ -91,6 +91,9 @@
 2. Seach for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
 3. Install this [theme](https://addons.mozilla.org/en-US/firefox/addon/simplerentfox/).
 
+**Firefox Homepage**
+* Follow [this](https://github.com/re1san/Bento)
+* Also replace Openweather Api key with your own [here](https://github.com/re1san/Bento/blob/72c8c0bac309bd725c58d21ff524382c684f8951/config.js#L29)
 
 ## Acknowledgement
 
