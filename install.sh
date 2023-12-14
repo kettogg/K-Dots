@@ -175,7 +175,7 @@ if ! [ -d $HOME/.config/latte ];
 then
   mkdir -p $HOME/.config/latte
 fi
-cp config/latte/* $HOME/.config/latte/*
+cp config/latte/* $HOME/.config/latte/
 #latte-dock --import-layout $HOME/.config/latte/Mori.layout.latte
 echo "[*] Done."
 
@@ -187,7 +187,7 @@ echo "[*] Done."
 
 git switch nya
 echo "[*] Installing terminal configs ..."
-sudo pacman -S kitty neofetch zsh starship eza imagemagick
+sudo pacman -S kitty neofetch zsh starship imagemagick
 yay -S cava
 # Backup existing configs
 if [ -d $HOME/.config/kitty ];
