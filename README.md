@@ -63,9 +63,9 @@
 * Arch Linux with Kde Plasma (preferred through `archinstall` script)
 
 **Once you have working setup with Kde Plasma use the command below to run install script**
-* ```bash
-    source <(curl -s https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh)
-  ```
+ ```bash
+ source <(curl -s https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh)
+ ```
 **After the complete execution of script follow the steps**
 
 * Go to Settings > Appearance and set the following settings
