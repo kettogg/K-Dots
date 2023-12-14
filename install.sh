@@ -267,12 +267,12 @@ echo "[*] Launching Latte-dock ..."
 latte-dock --import-layout $HOME/.config/latte/Mori.layout.latte &
 
 # IG Just do it manually ...
-# echo "[*] Applying plasma themes ..."
+echo "[*] Applying plasma themes ..."
 
-# plasma-apply-wallpaperimage $HOME/.local/share/wallpapers/Nya.png
-# plasma-apply-colorscheme $HOME/.local/share/color-schemes/MoriDark.colors
-# plasma-apply-desktoptheme $HOME/.local/share/plasma/desktoptheme/Mori
-# plasma-apply-cursortheme $HOME/.local/share/icons/
+plasma-apply-wallpaperimage $HOME/.local/share/wallpapers/Nya.png
+plasma-apply-colorscheme $HOME/.local/share/color-schemes/MoriDark.colors
+plasma-apply-desktoptheme $HOME/.local/share/plasma/desktoptheme/Mori
+plasma-apply-cursortheme $HOME/.local/share/icons/Mori_Snow
 
 cat<<"EOF"
 
