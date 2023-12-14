@@ -264,7 +264,7 @@ fi
 echo "[*] Wrapping up ..."
 
 echo "[*] Launching Latte-dock ..."
-latte-dock --import-layout $HOME/.config/latte/Mori.layout.latte
+latte-dock --import-layout $HOME/.config/latte/Mori.layout.latte &
 
 # IG Just do it manually ...
 # echo "[*] Applying plasma themes ..."
