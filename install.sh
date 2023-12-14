@@ -235,7 +235,10 @@ if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
     echo "Installing Firefox ..."
     sudo pacman -S firefox
     echo "[*] Installing Firefox config ..."
-    cp -r firefox/* $HOME/.mozilla/firefox/*.default-release/
+    firefox &     #
+    sleep 3       #
+    pkill firefox # To create the directory of *.default-release
+    cp -r firefox-css/* $HOME/.mozilla/firefox/*.default-release/
     echo "[*] Done."
 else
     echo "[*] Firefox installation skipped."
@@ -251,8 +254,8 @@ if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
     sudo chmod a+wr /opt/spotify/Apps -R
 
     cp -r spicetify/* $HOME/.config/spicetify/Themes/
-    spicetify config current_theme Snow
-    spicetify backup apply
+    # spicetify config current_theme Snow
+    # spicetify backup apply # Manually as needs login!
     echo "[*] Done."
 else
     echo "[*] Spotify installation skipped."
