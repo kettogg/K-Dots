@@ -77,7 +77,7 @@
 **VS-Code Theme**
 * Its a custom theme made by me, search for **Tsuki** in Vs-code extensions!
 * Or install it from the [marketplace](https://marketplace.visualstudio.com/items?itemName=re1san.tsuki)
-* Github [repo])(https://github.com/re1san/Tsuki)
+* Github [repo](https://github.com/re1san/Tsuki)
 
 **Spotify Theme**
 * Make sure you have already signed in to spotify after that run this `spicetify config current_theme Snow && spicetify backup apply`
@@ -95,3 +95,9 @@ Thanks to all these wonderful people for helping me out!
 * [Gwen](https://github.com/elythh)
 * [Nitrux](https://github.com/Nitrux)
 * [Linuxmobile](https://github.com/linuxmobile)
+
+## Misc
+
+*If you loved the theme consider starring this repo, keeps me motivated to maintain it*
+
+Also feel free to open an issue if you face any problems or contribute (like making the script modular instead of writing it all in a single file!)
