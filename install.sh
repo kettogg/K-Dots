@@ -23,6 +23,18 @@ reset()
   cd $CLONE_DIR/Kde-Dots
 }
 
+backup()
+{
+  if ! [ -d $HOME/.backup ];
+  then
+    mkdir -p $HOME/.backup
+  fi
+
+  local DIR=$1
+  cp -r $DIR $HOME/.backup/
+  echo "[*] $DIR backed up to $HOME/.backup"
+}
+
 #|-----< Script start >-----|#
 cat<<"EOF"
 
@@ -176,6 +188,17 @@ echo "[*] Done."
 git switch nya
 echo "[*] Installing terminal configs ..."
 sudo pacman -S kitty neofetch zsh starship eza imagemagick
+
+# Backup existing configs
+if [ -d $HOME/.config/kitty ];
+then
+  backup $HOME/.config/kitty 
+fi
+if [ -d $HOME/.config/neofetch ];
+then
+  backup $HOME/.config/neofetch
+fi
+
 cp -r config/* $HOME/.config/
 
 if ! [ -d $HOME/.zsh ];
@@ -185,6 +208,11 @@ fi
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+
+if [ -f $HOME/.zshrc ];
+then
+  backup $HOME/.zshrc
+fi
 
 cp home/.zshrc $HOME/
 echo "[*] Done."
@@ -201,7 +229,7 @@ cp -r fonts/*  $HOME/.local/share/fonts/
 cp -r wall/* $HOME/.local/share/wallpapers/
 
 #|-----< Firefox >-----|#
-read -p "[*] Do you want to install firefox and its config? (y/n): " choice
+read -p "[*] Do you want to install Firefox and its config? (y/n): " choice
 
 if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
     echo "Installing Firefox ..."
@@ -211,6 +239,23 @@ if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
     echo "[*] Done."
 else
     echo "[*] Firefox installation skipped."
+fi
+
+read -p "[*] Do you want to install Spotify and its config? (y/n): " choice
+
+if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
+    echo "Installing Spotify ..."
+    yay -S spotify spicetify-cli
+    echo "[*] Installing Spicetify config ..."
+    sudo chmod a+wr /opt/spotify
+    sudo chmod a+wr /opt/spotify/Apps -R
+
+    cp -r spicetify/* $HOME/.config/spicetify/Themes/
+    spicetify config current_theme Snow
+    spicetify backup apply
+    echo "[*] Done."
+else
+    echo "[*] Spotify installation skipped."
 fi
 
 echo "[*] Wrapping up ..."
