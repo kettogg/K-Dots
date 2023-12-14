@@ -68,7 +68,7 @@
   ```
 **After the complete execution of script follow the steps**
 
-* Go to Settings > Appearance and set the following settigns
+* Go to Settings > Appearance and set the following settings
   * Application Style to Lightly
   * Window Deco to Nitrux
   * Fonts > Adjust all fonts to *Lexend* & Fix-width font to *Iosevka Nerd Font*
