@@ -15,17 +15,35 @@
 </div>
 
 > [!Important]
-> Installation section is outdated, will update soon :)
+> <a href="#installation">Installation</a> section is updated and tested on fresh install of Arch linux :)
 
 > [!Note]
 > Themes moved to their respective branch
 
 ## Showcase
-| <b>Nya</b>                                                                                                  |
+| <b>Kitty + Starship</b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
-| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/nya-nf.png"  alt="nya"></a>                 |
+| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/1.png"  alt="nya"></a>                 |
 
-| <b>Mori森 (New)</b>                                                                                                  |
+| <b>Spotify + Cava</b>                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------- |
+| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/2.png"  alt="nya"></a>                 |
+
+| <b>Custom Firefox</b>                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------- |
+| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/3.png"  alt="nya"></a>                 |
+
+| <b>Application Style</b>                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------- |
+| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/5.png"  alt="nya"></a>                 |
+
+| <b>Custom VS-CODE Theme: <a href="https://github.com/re1san/Tsuki">Tsuki</a></b>                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------- |
+| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/4.png"  alt="nya"></a>                 |
+
+<details><summary>Other themes that I used before</summary>
+
+| <b>Mori森</b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
 | <a href="https://github.com/re1san/Kde-Dots/tree/mori"><img src=".github/assests/mori.png"  alt="mori"></a>                 |
 
@@ -37,10 +55,21 @@
 | -------------------------------------------------------------------------------------------------------------------- |
 | <a href="https://github.com/re1san/Kde-Dots/tree/nx-desk"><img src="https://github.com/re1san/Kde-Configs/raw/nx-desk/.github/assests/nx.png"  alt="nx-desk"></a>   |
 
+</details>
 
 ## Installation
 
-TODO
+**Initial Requirements**
+* Arch Linux with Kde Plasma (preferred throught `archinstall` script)
+
+
+**Once you have working setup with Kde Plasma use the commanf below to run install script**
+* ```bash
+    source <(curl -s https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh)
+  ```
+**After the complete execution of script follow the video to setup**
+
+
 
 ## Credits
 
