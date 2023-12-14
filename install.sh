@@ -188,7 +188,7 @@ echo "[*] Done."
 git switch nya
 echo "[*] Installing terminal configs ..."
 sudo pacman -S kitty neofetch zsh starship eza imagemagick
-
+yay -S cava
 # Backup existing configs
 if [ -d $HOME/.config/kitty ];
 then
