@@ -53,7 +53,7 @@ else
   sudo pacman -S git
   echo "[*] Git Installed."
 fi
-
+sleep 1
 #|-----< Check yay >-----|#
 
 if ! [ -d $CLONE_DIR ];
