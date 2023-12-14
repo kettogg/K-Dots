@@ -82,10 +82,15 @@
 **Spotify Theme**
 * Make sure you have already signed in to spotify after that run this `spicetify config current_theme Snow && spicetify backup apply`
 
+**Kitty**
+* Change default shell to zsh `chsh -s /bin/zsh`
+* And launch kitty! (startship already installed using script)
+
 **Firefox config**
 1. Type `about:config` into your URL bar. Click on the I accept the risk button if you're shown a warning.
 2. Seach for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
 3. Install this [theme](https://addons.mozilla.org/en-US/firefox/addon/simplerentfox/).
+
 
 ## Acknowledgement
 
