@@ -17,8 +17,8 @@ eval "$(starship init zsh)"
 
 # Alias
 alias ls="ls --color=auto"
-alias l="eza"
-alias la="eza -l"
+#alias l="eza"
+#alias la="eza -l"
 alias nf="neofetch"
 
 # Plugins
