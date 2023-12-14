@@ -60,18 +60,34 @@
 ## Installation
 
 **Initial Requirements**
-* Arch Linux with Kde Plasma (preferred throught `archinstall` script)
+* Arch Linux with Kde Plasma (preferred through `archinstall` script)
 
-
-**Once you have working setup with Kde Plasma use the commanf below to run install script**
+**Once you have working setup with Kde Plasma use the command below to run install script**
 * ```bash
     source <(curl -s https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh)
   ```
-**After the complete execution of script follow the video to setup**
+**After the complete execution of script follow the steps**
 
+* Go to Settings > Appearance and set the following settigns
+  * Application Style to Lightly
+  * Window Deco to Nitrux
+  * Fonts > Adjust all fonts to *Lexend* & Fix-width font to *Iosevka Nerd Font*
+  * Icons to Reversal-black-dark
+ 
+**VS-Code Theme**
+* Its a custom theme made by me, search for **Tsuki** in Vs-code extensions!
+* Or install it from the [marketplace](https://marketplace.visualstudio.com/items?itemName=re1san.tsuki)
+* Github [repo])(https://github.com/re1san/Tsuki)
 
+**Spotify Theme**
+* Make sure you have already signed in to spotify after that run this `spicetify config current_theme Snow && spicetify backup apply`
 
-## Credits
+**Firefox config**
+1. Type `about:config` into your URL bar. Click on the I accept the risk button if you're shown a warning.
+2. Seach for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
+3. Install this [theme](https://addons.mozilla.org/en-US/firefox/addon/simplerentfox/).
+
+## Acknowledgement
 
 Thanks to all these wonderful people for helping me out!
 
