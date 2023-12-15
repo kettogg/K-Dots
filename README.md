@@ -73,6 +73,9 @@
   * Window Deco to Nitrux
   * Fonts > Adjust all fonts to *Lexend* & Fix-width font to *Iosevka Nerd Font*
   * Icons to Reversal-black-dark
+
+* Latte-dock should start automatically, if not start it from Apps Launcher
+* Remove existing kde panel (right click > edit mode > right click on panel > edit > remove panel)
  
 **VS-Code Theme**
 * Its a custom theme made by me, search for **Tsuki** in Vs-code extensions!
@@ -84,7 +87,7 @@
 
 **Kitty**
 * Change default shell to zsh `chsh -s /bin/zsh`
-* And launch kitty! (startship already installed using script)
+* And launch kitty! (starship already installed using script)
 
 **Firefox config**
 1. Type `about:config` into your URL bar. Click on the I accept the risk button if you're shown a warning.
