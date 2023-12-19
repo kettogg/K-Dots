@@ -45,12 +45,15 @@ cat<<"EOF"
 EOF
 
 #|-----< Check git >-----|#
+echo "[*] Updating system ..."
+sudo pacman -Syu
+
 echo "[*] Installing git ..."
 if pkg_installed git
 then
   echo "[*] Git already installed, skipping ..."
 else
-  sudo pacman -S git
+  sudo pacman -S git less
   echo "[*] Git Installed."
 fi
 sleep 1
@@ -83,7 +86,7 @@ echo "[*] Dots cloned."
 #|-----< Install necessary dependencies >-----|#
 echo "[*] Installing dependencies ..."
 
-sudo pacman -S cmake extra-cmake-modules kdecoration qt5-declarative qt5-x11extras less
+sudo pacman -S cmake extra-cmake-modules kdecoration qt5-declarative qt5-x11extras
 
 echo "[*] Deps installed."
 
@@ -98,8 +101,9 @@ fi
 git switch mori && cd clock-applet
 
 mkdir build && cd build
-cmake -DCMAKE_INSTALL_PREFIX=`kf5-config --prefix` -DCMAKE_BUILD_TYPE=Release -DLIB_INSTALL_DIR=lib -DKDE_INSTALL_USE_QT_SYS_PATHS=ON ../
-make && sudo make install
+cmake -DCMAKE_INSTALL_PREFIX=`kf5-config --localprefix` -DCMAKE_BUILD_TYPE=Release -DLIB_INSTALL_DIR=lib -DKDE_INSTALL_USE_QT_SYS_PATHS=ON ../
+make
+sudo make install
 cd .. && rm -rf build
 reset # In kde-dots dir
 echo "[*] Clock Applet installed."
