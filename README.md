@@ -64,7 +64,7 @@
 
 **Once you have working setup with Kde Plasma use the command below to run install script**
  ```bash
- source <(curl -s https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh)
+curl -s https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh 2>&1 | tee log.txt
  ```
 **After the complete execution of script follow the steps**
 
