@@ -73,7 +73,7 @@ curl https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh -o instal
   * Window Deco to Nitrux
   * Fonts > Adjust all fonts to *Lexend* & Fix-width font to *Iosevka Nerd Font*
   * Icons to Reversal-black-dark
-  * Change gtk theme (Application Style > Configure GNOME/GTk > Select Mori-gtk)
+  * Change gtk theme (Application Style > Configure GNOME/GTK ... > Select Mori-gtk)
 
 * Latte-dock should start automatically, if not start it from Apps Launcher
 * Remove existing kde panel (right click > edit mode > right click on panel > edit > more options > remove panel)
