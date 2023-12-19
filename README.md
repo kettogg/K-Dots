@@ -64,7 +64,7 @@
 
 **Once you have working setup with Kde Plasma use the command below to run install script**
  ```bash
-curl -s https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh 2>&1 | tee log.txt
+curl https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh 2>&1 | tee log.txt
  ```
 **After the complete execution of script follow the steps**
 
@@ -73,9 +73,10 @@ curl -s https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh -o ins
   * Window Deco to Nitrux
   * Fonts > Adjust all fonts to *Lexend* & Fix-width font to *Iosevka Nerd Font*
   * Icons to Reversal-black-dark
+  * Change gtk theme (Application Style > Configure GNOME/GTk > Select Mori-gtk)
 
 * Latte-dock should start automatically, if not start it from Apps Launcher
-* Remove existing kde panel (right click > edit mode > right click on panel > edit > remove panel)
+* Remove existing kde panel (right click > edit mode > right click on panel > edit > more options > remove panel)
  
 **VS-Code Theme**
 * Its a custom theme made by me, search for **Tsuki** in Vs-code extensions!
