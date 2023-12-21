@@ -17,6 +17,6 @@
 ## Showcase
 | <b>Nya</b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
-| <a href="https://github.com/re1san/Kde-Dots"><img src="https://github.com/re1san/Kde-Dots/raw/main/.github/assests/nya-nf.png"  alt="nya"></a>                 |
+| <a href="https://github.com/re1san/Kde-Dots"><img src="https://github.com/re1san/Kde-Dots/raw/main/.github/assests/1.png"  alt="nya"></a>                 |
 
 *Other configs are same as of <a href="https://github.com/re1san/Kde-Dots/tree/mori">Mori</a> branch*
