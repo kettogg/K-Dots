@@ -21,9 +21,28 @@
 > Themes moved to their respective branch
 
 ## Showcase
-| <b>Kitty + Starship</b>                                                                                                  |
+<!-- | <b>Kitty + Starship</b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
-| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/1.png"  alt="nya"></a>                 |
+| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/1.png"  alt="nya"></a>                 | -->
+<table>
+  <thead>
+    <tr>
+      <th>Kitty + Starship</th>
+      <th>More Neofetch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/1.png"  alt="nya"></a>
+      </td>
+      <td>
+        <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/1-alt.png"  alt="nya"></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 | <b>Spotify + Cava</b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
@@ -32,10 +51,6 @@
 | <b>Custom Firefox</b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
 | <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/3.png"  alt="nya"></a>                 |
-
-| <b>Application Style</b>                                                                                                  |
-| -------------------------------------------------------------------------------------------------------------------- |
-| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/5.png"  alt="nya"></a>                 |
 
 | <b>Custom VS-CODE Theme: <a href="https://github.com/re1san/Tsuki">Tsuki</a></b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
