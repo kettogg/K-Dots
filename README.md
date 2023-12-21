@@ -27,34 +27,81 @@
 <table>
   <thead>
     <tr>
-      <th>Kitty + Starship</th>
-      <th>More Neofetch</th>
+      <th colspan=2 style="text-align: center">Kitty + Starship</th>
+    </tr>
+    <tr>
+      <th style="text-align: center">Nya</th>
+      <th style="text-align: center">Sciss</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/1.png"  alt="nya"></a>
+        <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/nya.png"  alt="nya"></a>
       </td>
       <td>
-        <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/1-alt.png"  alt="nya"></a>
+        <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/sciss.png"  alt="sciss"></a>
       </td>
     </tr>
   </tbody>
 </table>
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">
+        Spotify + Cava
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <td>
+      <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/2.png"  alt="nya">
+    </td>
+  </tbody>
+</table>
 
-| <b>Spotify + Cava</b>                                                                                                  |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">
+        Custom Firefox
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <td>
+      <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/3.png"  alt="nya">
+    </td>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">
+        Custom VS-Code Theme: <a href="https://github.com/re1san/Tsuki">Tsuki</a>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <td>
+      <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/4.png"  alt="nya">
+    </td>
+  </tbody>
+</table>
+
+<!-- | <b>Spotify + Cava</b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
-| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/2.png"  alt="nya"></a>                 |
+| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/2.png"  alt="nya"></a>                 | -->
 
-| <b>Custom Firefox</b>                                                                                                  |
+<!-- | <b>Custom Firefox</b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
 | <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/3.png"  alt="nya"></a>                 |
 
-| <b>Custom VS-CODE Theme: <a href="https://github.com/re1san/Tsuki">Tsuki</a></b>                                                                                                  |
-| -------------------------------------------------------------------------------------------------------------------- |
-| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/4.png"  alt="nya"></a>                 |
+| <b>Custom VS-CODE Theme: <a href="https://github.com/re1san/Tsuki">Tsuki</a></b>                                                                                                  | -->
+<!-- | -------------------------------------------------------------------------------------------------------------------- |
+| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/4.png"  alt="nya"></a>                 | -->
 
 <details><summary>Other themes that I used before</summary>
 
