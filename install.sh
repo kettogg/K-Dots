@@ -101,7 +101,7 @@ fi
 git switch mori && cd clock-applet
 
 mkdir build && cd build
-cmake -DCMAKE_INSTALL_PREFIX=`kf5-config --localprefix` -DCMAKE_BUILD_TYPE=Release -DLIB_INSTALL_DIR=lib -DKDE_INSTALL_USE_QT_SYS_PATHS=ON ../
+cmake -DCMAKE_INSTALL_PREFIX=`kf5-config --prefix` -DCMAKE_BUILD_TYPE=Release -DLIB_INSTALL_DIR=lib -DKDE_INSTALL_USE_QT_SYS_PATHS=ON ../
 make
 sudo make install
 cd .. && rm -rf build
@@ -273,10 +273,10 @@ latte-dock --import-layout $HOME/.config/latte/Mori.layout.latte &
 # IG Just do it manually ...
 echo "[*] Applying plasma themes ..."
 
-plasma-apply-wallpaperimage $HOME/.local/share/wallpapers/nya.png
-plasma-apply-colorscheme $HOME/.local/share/color-schemes/MoriDark.colors
-plasma-apply-desktoptheme $HOME/.local/share/plasma/desktoptheme/Mori
-plasma-apply-cursortheme $HOME/.local/share/icons/Mori_Snow
+#plasma-apply-wallpaperimage $HOME/.local/share/wallpapers/nya.png
+#plasma-apply-colorscheme $HOME/.local/share/color-schemes/MoriDark.colors
+#plasma-apply-desktoptheme $HOME/.local/share/plasma/desktoptheme/Mori
+#plasma-apply-cursortheme $HOME/.local/share/icons/Mori_Snow
 
 cat<<"EOF"
 
