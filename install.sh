@@ -167,7 +167,7 @@ if ! [ -d $HOME/.local/share/wallpapers ];
 then
   mkdir -p $HOME/.local/share/wallpapers
 fi
-cp -r walls/* $HOME/.local/share/wallpapers/
+# cp -r walls/* $HOME/.local/share/wallpapers/ # Walls of mori branch dont want
 
 echo "[*] Done."
 
