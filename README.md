@@ -162,8 +162,8 @@ curl https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh -o instal
 * Also replace Openweather Api key with your own [here](https://github.com/re1san/Bento/blob/72c8c0bac309bd725c58d21ff524382c684f8951/config.js#L29)
 
 ## TODO
-- [] Merge all configs in one branch 
-- [] Make installation video (maybe)
+- [ ] Merge all configs in one branch 
+- [ ] Make installation video (maybe)
 
 ## Acknowledgement
 
