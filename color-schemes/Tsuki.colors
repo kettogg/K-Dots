@@ -19,8 +19,8 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=52,52,52
-BackgroundNormal=44,44,44
+BackgroundAlternate=33,33,33
+BackgroundNormal=35,35,35
 DecorationFocus=113,154,195
 DecorationHover=100,136,172
 ForegroundActive=61,174,233
@@ -62,7 +62,7 @@ ForegroundVisited=165,109,177
 
 [Colors:Tooltip]
 BackgroundAlternate=97,97,97
-BackgroundNormal=97,97,97
+BackgroundNormal=79,79,79
 DecorationFocus=113,154,195
 DecorationHover=100,136,172
 ForegroundActive=61,174,233
@@ -104,7 +104,7 @@ ForegroundVisited=165,109,177
 
 [General]
 ColorScheme=MoriDark
-Name=Mori Dark
+Name=Tsuki
 shadeSortColumn=true
 
 [KDE]
