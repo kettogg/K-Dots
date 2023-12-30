@@ -16,6 +16,7 @@
 
 > [!Important]
 > <a href="#installation">Installation</a> section is updated and tested on fresh install of Arch linux :)
+> Now supports Ubuntu, Opensuse
 
 > [!Note]
 > Themes moved to their respective branch
