@@ -24,26 +24,34 @@
 ## Showcase
 <!-- | <b>Kitty + Starship</b>                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------- |
-| <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/1.png"  alt="nya"></a>                 | -->
+| <a href="https://github.com/re1san/Kde-Dots/tree/tsuki"><img src=".github/assests/1.png"  alt="nya"></a>                 | -->
 <table>
   <thead>
     <tr>
       <th colspan=2 style="text-align: center">Kitty + Starship</th>
     </tr>
-    <tr>
-      <th style="text-align: center">Nya</th>
-      <th style="text-align: center">Sciss</th>
-    </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/nya.png"  alt="nya"></a>
-      </td>
-      <td>
-        <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/sciss.png"  alt="sciss"></a>
+        <a href="https://github.com/re1san/Kde-Dots/tree/tsuki"><img src=".github/assests/11.png"  alt="tsuki"></a>
       </td>
     </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">
+        Nvim + Cava
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <td>
+      <a href="https://github.com/re1san/Kde-Dots/tree/tsuki"><img src=".github/assests/22.png"  alt="tsuki">
+    </td>
   </tbody>
 </table>
 
@@ -57,7 +65,7 @@
   </thead>
   <tbody>
     <td>
-      <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/2.png"  alt="nya">
+      <a href="https://github.com/re1san/Kde-Dots/tree/tsuki"><img src=".github/assests/44.png"  alt="tsuki">
     </td>
   </tbody>
 </table>
@@ -72,7 +80,22 @@
   </thead>
   <tbody>
     <td>
-      <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/3.png"  alt="nya">
+      <a href="https://github.com/re1san/Kde-Dots/tree/tsuki"><img src=".github/assests/3.png"  alt="tsuki">
+    </td>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">
+        Nvim Theme
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <td>
+      <a href="https://github.com/re1san/Kode"><img src=".github/assests/33.png"  alt="tsuki">
     </td>
   </tbody>
 </table>
@@ -87,7 +110,7 @@
   </thead>
   <tbody>
     <td>
-      <a href="https://github.com/re1san/Kde-Dots/tree/nya"><img src=".github/assests/4.png"  alt="nya">
+      <a href="https://github.com/re1san/Tsuki"><img src=".github/assests/4.png"  alt="tsuki">
     </td>
   </tbody>
 </table>

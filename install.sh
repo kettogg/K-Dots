@@ -200,7 +200,14 @@ copy_configs() {
 
   cp -r config/* $HOME/.config/
 
+	if ! [ -d $HOME/.local/bin ];
+	then
+	mkdir -p $HOME/.local/bin
+	fi
+  cp -r bin/* $HOME/.local/bin/
+
   cp home/.zshrc $HOME/
+
 }
 
 zsh_setup() {
