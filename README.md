@@ -15,7 +15,7 @@
 </div>
 
 > [!Important]
-> <a href="#installation">Installation</a> section is updated and tested on fresh install of Arch linux :)
+> <a href="#installation">Installation</a> section is updated and tested on fresh install of Arch linux :) <br/>
 > Now supports Ubuntu, Opensuse
 
 > [!Note]
@@ -127,7 +127,7 @@
 
 **Once you have working setup with Kde Plasma use the command below to run install script**
  ```bash
-curl https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh 2>&1 | tee log.txt
+curl https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
  ```
 **After the complete execution of script follow the steps**
 
