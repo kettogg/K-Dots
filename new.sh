@@ -236,7 +236,7 @@ deps_arch() {
     echo ":: Git already installed, skipping ..."
   else
     sudo pacman -S git less
-    echo -e ":: Git Installed ${green}${on_success}${nc}"
+    echo -e ":: Git Installed [${green}${on_success}${nc}]"
   fi
   sleep 1
   #|-----< Check yay >-----|#
@@ -255,7 +255,7 @@ deps_arch() {
     git clone https://aur.archlinux.org/yay.git $CLONE_DIR/yay/
     cd $CLONE_DIR/yay
     makepkg -si
-    echo -e ":: Yay Installed ${green}${on_success}${nc}"
+    echo -e ":: Yay Installed [${green}${on_success}${nc}]"
   fi
 
   #|-----< Install necessary dependencies >-----|#
@@ -264,7 +264,7 @@ deps_arch() {
   sudo pacman -S cmake extra-cmake-modules kdecoration qt5-declarative qt5-x11extras kitty neofetch zsh starship imagemagick latte-dock neovim
   yay -S cava plasma5-applets-latte-separator
 
-  echo -e ":: Deps installed ${green}${on_success}${nc}"
+  echo -e ":: Deps installed [${green}${on_success}${nc}]"
 }
 
 deps_ubuntu() {
@@ -274,7 +274,7 @@ deps_ubuntu() {
 
   echo ":: Installing git ..."
   sudo apt install git
-  echo -e ":: Git Installed ${green}${on_success}${nc}"
+  echo -e ":: Git Installed [${green}${on_success}${nc}]"
   sleep 1
   #|-----< Clone dir >-----|#
 
@@ -290,7 +290,7 @@ deps_ubuntu() {
   sudo apt install kitty neofetch zsh imagemagick latte-dock cava neovim
   curl -sS https://starship.rs/install.sh | sh
 
-  echo -e ":: Deps installed ${green}${on_success}${nc}"
+  echo -e ":: Deps installed [${green}${on_success}${nc}]"
 }
 
 deps_opensuse() {
@@ -300,7 +300,7 @@ deps_opensuse() {
 
   echo ":: Installing git ..."
   sudo zypper install git
-  echo -e ":: Git Installed ${green}${on_success}${nc}"
+  echo -e ":: Git Installed [${green}${on_success}${nc}]"
   sleep 1
   #|-----< Clone dir >-----|#
 
@@ -313,7 +313,7 @@ deps_opensuse() {
   sudo zypper install cmake gcc-c++ extra-cmake-modules libQt5Gui-devel libQt5DBus-devel libqt5-qttools-devel libqt5-qtx11extras-devel libQt5OpenGL-devel libQt5Network-devel libepoxy-devel kconfig-devel kconfigwidgets-devel kcrash-devel kglobalaccel-devel ki18n-devel kio-devel kservice-devel kinit-devel knotifications-devel kwindowsystem-devel kguiaddons-devel kiconthemes-devel kpackage-devel kwin5-devel xcb-util-devel xcb-util-cursor-devel xcb-util-wm-devel xcb-util-keysyms-devel
   sudo zypper install kitty neofetch zsh ImageMagick latte-dock cava neovim
   curl -sS https://starship.rs/install.sh | sh
-  echo -e ":: Deps installed ${green}${on_success}${nc}"
+  echo -e ":: Deps installed [${green}${on_success}${nc}]"
 }
 
 
@@ -333,7 +333,7 @@ firefox_spotify() {
       sleep 3       #
       pkill firefox # To create the directory of *.default-release
       cp -r firefox-css/* $HOME/.mozilla/firefox/*.default-release/
-      echo -e ":: ${green}Done${nc}"
+      echo -e ":: [${green}Done${nc}]"
   else
       echo ":: Firefox installation skipped"
   fi
@@ -350,7 +350,7 @@ firefox_spotify() {
       cp -r spicetify/* $HOME/.config/spicetify/Themes/
       # spicetify config current_theme Snow
       # spicetify backup apply # Manually as needs login!
-      echo -e ":: ${green}Done${nc}"
+      echo -e ":: [${green}Done${nc}]"
   else
       echo ":: Spotify installation skipped"
   fi
@@ -395,7 +395,7 @@ echo ":: Cloning dots in $CLONE_DIR ..."
 
 git clone https://github.com/re1san/Kde-Dots.git $CLONE_DIR/Kde-Dots/
 
-echo -e ":: Dots cloned ${green}${on_success}${nc}"
+echo -e ":: Dots cloned [${green}${on_success}${nc}]"
 
 #|-----< Build applets >-----|#
 echo ":: Logs will be written in foo.log ^^"
@@ -449,7 +449,7 @@ read -p "?: Do you want to install Neovim config? (y/n): " choice
 
 if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
     git clone https://github.com/re1san/Kode ~/.config/nvim --depth 1
-    echo -e ":: ${green}Done${nc}, please open neovim by command 'nvim' after completion of script to install all plugins and colorscheme"
+    echo -e ":: [${green}Done${nc}], please open neovim by command 'nvim' after completion of script to install all plugins and colorscheme"
 else
     echo ":: Neovim config installation skipped"
 fi
