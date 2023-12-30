@@ -124,6 +124,7 @@
 
 **Initial Requirements**
 * Arch Linux with Kde Plasma (preferred through `archinstall` script)
+* Script supports Ubuntu and Opensuse now, make sure you have Kde Plasma installed
 
 **Once you have working setup with Kde Plasma use the command below to run install script**
  ```bash
