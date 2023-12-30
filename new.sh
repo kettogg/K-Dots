@@ -13,7 +13,7 @@ nc="\e[0m"
 touch foo.log
 
 #|-----< Spinner >-----|#
-function _spinner() {
+_spinner() {
     # $1 start/stop
     #
     # on start: $2 - Display message
@@ -59,7 +59,7 @@ function _spinner() {
     esac
 }
 
-function start_spinner {
+start_spinner() {
     # $1 : Msg to display
     _spinner "start" "${1}" &
     # Set global spinner pid
@@ -67,7 +67,7 @@ function start_spinner {
     disown
 }
 
-function stop_spinner {
+stop_spinner() {
     # $1 : Command exit status
     _spinner "stop" $1 $_sp_pid
     unset _sp_pid
@@ -366,7 +366,7 @@ cat<<"EOF"
 EOF
 
 #|-----< Check Distro >-----|#
-DISTRO=$(awk -F= '/^ID=/{print $2}' /etc/os-release | tr -d '"'
+DISTRO=$(awk -F= '/^ID=/{print $2}' /etc/os-release | tr -d '"')
 
 case $DISTRO in
     arch)
