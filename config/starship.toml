@@ -1,0 +1,41 @@
+add_newline = false
+format = "$directory$fill$git_branch$git_status$cmd_duration$line_break$character"
+fill.symbol = " "
+
+[character]
+success_symbol = "[](#6e95bd)"
+error_symbol = "[](#da4b52)"
+vicmd_symbol = "[](#dc8c61)"
+
+[directory]
+format = "[]($style)[  ](bg:#171717 fg:#6e95bd)[$path](bg:#171717 fg:#b7b7b7 bold)[ ]($style)"
+style = "bg:none fg:#171717"
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+format = "[]($style)[[  ](bg:#171717 fg:#6fadea bold)$branch](bg:#171717 fg:#b7b7b7)[ ]($style)"
+style = "bg:none fg:#171717"
+
+[git_status]
+format = "[]($style)[$all_status$ahead_behind](bg:#171717 fg:#b7b7b7 bold)[ ]($style)"
+style = "bg:none fg:#171717"
+conflicted = "="
+ahead = "⇡${count}"
+behind = "⇣${count} "
+diverged = "↑${ahead_count} ⇣${behind_count} "
+up_to_date = " "
+untracked = "?${count} "
+stashed = " "
+modified = "!${count} "
+staged = "+${count} "
+renamed = "»${count} "
+deleted = " ${count} "
+
+[cmd_duration]
+min_time = 1
+format = "[]($style)[[  ](bg:#171717 fg:#6e95bd bold)$duration](bg:#171717 fg:#b7b7b7 bold)[]($style)"
+disabled = false
+style = "bg:none fg:#171717"
+
+#command_timeout = 1000 

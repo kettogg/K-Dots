@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=NX Clock
+Name[x-test]=xxNX Clockxx
+
+Comment=Time displayed in a digital format and weather
+Comment[x-test]=xxTime displayed in a digital formatxx
+
+Icon=preferences-system-time
+Type=Service
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=Alexis López Zubieta
+X-KDE-PluginInfo-Email=azubieta90@gmail.com
+X-KDE-PluginInfo-License=GPLv2+
+X-KDE-PluginInfo-Name=org.nx.clock
+X-KDE-PluginInfo-Version=1.0
+# X-KDE-PluginInfo-Website=plasma.kde.org
+X-KDE-ServiceTypes=Plasma/Applet
+X-Plasma-API=declarativeappletscript
+X-KDE-PluginInfo-Category=Date and Time
+X-Plasma-Provides=org.kde.plasma.time,org.kde.plasma.date
+
+X-Plasma-MainScript=ui/main.qml
+X-Plasma-RemoteLocation=

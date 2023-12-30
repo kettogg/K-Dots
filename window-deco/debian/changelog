@@ -1,0 +1,23 @@
+nx-window-deco (0.0.4) nitrux; urgency=medium
+
+  * Add Maui style.
+
+ -- Uri Hererra <uri_herrera@nxos.org>  Mon, 01 Feb 2021 20:02:00 -0500
+
+nx-window-deco (0.0.3) nitrux; urgency=medium
+
+  * Add restore button.
+
+ -- Uri Hererra <uri_herrera@nxos.org>  Tue, 12 May 2020 02:22:00 -0500
+
+nx-window-deco (0.0.2) nitrux; urgency=medium
+
+  * Change the display name of the decoration.
+
+ -- Uri Hererra <uri_herrera@nxos.org>  Tue, 12 May 2020 00:48:00 -0500
+
+nx-window-deco (0.0.1) nitrux; urgency=medium
+
+  * Create package.
+
+ -- Uri Hererra <uri_herrera@nxos.org>  Mon, 11 May 2020 22:54:00 -0500
