@@ -218,6 +218,7 @@ zsh_setup() {
 iosevka() {
   reset
   curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Iosevka.tar.xz
+  mkdir ~/.local/share/fonts/Iosevka
   tar -xvf Iosevka.tar.xz -C ~/.local/share/fonts/Iosevka
 }
 
