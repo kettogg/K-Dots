@@ -171,7 +171,7 @@ curl https://raw.githubusercontent.com/re1san/Kde-Dots/main/install.sh -o instal
 * Github [repo](https://github.com/re1san/Tsuki)
 
 **Spotify Theme**
-* Make sure you have already signed in to spotify after that run this `spicetify config current_theme Snow && spicetify backup apply`
+* Make sure you have already signed in to spotify after that run this `spicetify config current_theme Tsuki && spicetify backup apply`
 
 **Kitty**
 * Change default shell to zsh `chsh -s /bin/zsh`
