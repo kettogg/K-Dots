@@ -14,63 +14,63 @@ touch foo.log
 
 #|-----< Spinner >-----|#
 _spinner() {
-    # $1 start/stop
-    #
-    # on start: $2 - Display message
-    # on stop : $2 - Process exit status
-    #           $3 - Spinner function pid (supplied from stop_spinner)
-    case $1 in
-        start)
-            echo -ne ":: ${2}  "
+  # $1 start/stop
+  #
+  # on start: $2 - Display message
+  # on stop : $2 - Process exit status
+  #           $3 - Spinner function pid (supplied from stop_spinner)
+  case $1 in
+    start)
+      echo -ne ":: ${2}  "
 
-            # Start spin
-            i=1
-            sp='\|/-'
-            delay=${SPINNER_DELAY:-0.15}
+      # Start spin
+      i=1
+      sp='\|/-'
+      delay=${SPINNER_DELAY:-0.15}
 
-            while :
-            do
-                printf "\b${sp:i++%${#sp}:1}"
-                sleep $delay
-            done
-            
-            ;;
-        stop)
-            if [[ -z ${3} ]]; then
-                echo "Spinner is not running ..."
-                exit 1
-            fi
+      while :
+      do
+        printf "\b${sp:i++%${#sp}:1}"
+        sleep $delay
+      done
+      
+      ;;
+    stop)
+      if [[ -z ${3} ]]; then
+        echo "Spinner is not running ..."
+        exit 1
+      fi
 
-            kill $3 > /dev/null 2>&1
+      kill $3 > /dev/null 2>&1
 
-            # Inform the user uppon success or failure
-            echo -en "\b["
-            if [[ $2 -eq 0 ]]; then
-                echo -en "${green}${on_success}${nc}"
-            else
-                echo -en "${red}${on_fail}${nc}"
-            fi
-            echo -e "]"
-            ;;
-        *)
-            echo "Invalid argument, try {start/stop}"
-            exit 1
-            ;;
-    esac
+      # Inform the user uppon success or failure
+      echo -en "\b["
+      if [[ $2 -eq 0 ]]; then
+        echo -en "${green}${on_success}${nc}"
+      else
+        echo -en "${red}${on_fail}${nc}"
+      fi
+      echo -e "]"
+      ;;
+    *)
+      echo "Invalid argument, try {start/stop}"
+      exit 1
+      ;;
+  esac
 }
 
 start_spinner() {
-    # $1 : Msg to display
-    _spinner "start" "${1}" &
-    # Set global spinner pid
-    _sp_pid=$!
-    disown
+  # $1 : Msg to display
+  _spinner "start" "${1}" &
+  # Set global spinner pid
+  _sp_pid=$!
+  disown
 }
 
 stop_spinner() {
-    # $1 : Command exit status
-    _spinner "stop" $1 $_sp_pid
-    unset _sp_pid
+  # $1 : Command exit status
+  _spinner "stop" $1 $_sp_pid
+  unset _sp_pid
 }
 
 
@@ -334,33 +334,33 @@ firefox_spotify() {
   read -p "?: Do you want to install Firefox and its config? (y/n): " choice
 
   if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
-      echo "Installing Firefox ..."
-      sudo pacman -S firefox
-      echo ":: Installing Firefox config ..."
-      firefox &     #
-      sleep 3       #
-      pkill firefox # To create the directory of *.default-release
-      cp -r firefox-css/* $HOME/.mozilla/firefox/*.default-release/
-      echo -e ":: [${green}Done${nc}]"
+    echo "Installing Firefox ..."
+    sudo pacman -S firefox
+    echo ":: Installing Firefox config ..."
+    firefox &     #
+    sleep 3       #
+    pkill firefox # To create the directory of *.default-release
+    cp -r firefox-css/* $HOME/.mozilla/firefox/*.default-release/
+    echo -e ":: [${green}Done${nc}]"
   else
-      echo ":: Firefox installation skipped"
+    echo ":: Firefox installation skipped"
   fi
 
   read -p "?: Do you want to install Spotify and its config? (y/n): " choice
 
   if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
-      echo "Installing Spotify ..."
-      yay -S spotify spicetify-cli
-      echo ":: Installing Spicetify config ..."
-      sudo chmod a+wr /opt/spotify
-      sudo chmod a+wr /opt/spotify/Apps -R
+    echo "Installing Spotify ..."
+    yay -S spotify spicetify-cli
+    echo ":: Installing Spicetify config ..."
+    sudo chmod a+wr /opt/spotify
+    sudo chmod a+wr /opt/spotify/Apps -R
 
-      cp -r spicetify/* $HOME/.config/spicetify/Themes/
-      # spicetify config current_theme Snow
-      # spicetify backup apply # Manually as needs login!
-      echo -e ":: [${green}Done${nc}]"
+    cp -r spicetify/* $HOME/.config/spicetify/Themes/
+    # spicetify config current_theme Snow
+    # spicetify backup apply # Manually as needs login!
+    echo -e ":: [${green}Done${nc}]"
   else
-      echo ":: Spotify installation skipped"
+    echo ":: Spotify installation skipped"
   fi
 }
 
@@ -377,23 +377,23 @@ EOF
 DISTRO=$(awk -F= '/^ID=/{print $2}' /etc/os-release | tr -d '"')
 
 case $DISTRO in
-    arch)
-        echo -e ":: Distro found ${DISTRO}"
-        deps_arch
-        ;;
-    ubuntu)
-        echo -e ":: Distro found ${DISTRO}"
-        deps_ubuntu
-        ;;
-    opensuse)
-        echo -e ":: Distro found ${DISTRO}"
-        deps_opensuse
-        ;;
-    *)
-        echo -e ":: ${red}${DISTRO}${nc} is unsupported for now :("
-        echo -e ":: Contact ${green}re1san${nc} on github :)"
-        exit 1
-        ;;
+  arch)
+    echo -e ":: Distro found ${DISTRO}"
+    deps_arch
+    ;;
+  ubuntu)
+    echo -e ":: Distro found ${DISTRO}"
+    deps_ubuntu
+    ;;
+  opensuse)
+    echo -e ":: Distro found ${DISTRO}"
+    deps_opensuse
+    ;;
+  *)
+    echo -e ":: ${red}${DISTRO}${nc} is unsupported for now :("
+    echo -e ":: Contact ${green}re1san${nc} on github :)"
+    exit 1
+    ;;
 esac
 
 
@@ -440,15 +440,15 @@ stop_spinner $?
 
 #|-----< Fox, Spotify >-----|#
 case $DISTRO in
-    arch)
-      firefox_spotify
-        ;;
-    # ubuntu)
-    #     ;;
-    # opensuse)
-    #     ;;
-    # *)
-    #     ;;
+  arch)
+    firefox_spotify
+    ;;
+  # ubuntu)
+  #     ;;
+  # opensuse)
+  #     ;;
+  # *)
+  #     ;;
 esac
 
 #|-----< Nvim Config >-----|#
@@ -456,8 +456,8 @@ esac
 read -p "?: Do you want to install Neovim config? (y/n): " choice
 
 if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
-    git clone https://github.com/re1san/Kode ~/.config/nvim --depth 1
-    echo -e ":: [${green}Done${nc}], please open neovim by command 'nvim' after completion of script to install all plugins and colorscheme"
+  git clone https://github.com/re1san/Kode ~/.config/nvim --depth 1
+  echo -e ":: [${green}Done${nc}], please open neovim by command 'nvim' after completion of script to install all plugins and colorscheme"
 else
     echo ":: Neovim config installation skipped"
 fi
