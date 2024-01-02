@@ -385,7 +385,7 @@ case $DISTRO in
     echo -e ":: Distro found ${DISTRO}"
     deps_ubuntu
     ;;
-  opensuse)
+  opensuse | opensuse-tumbleweed)
     echo -e ":: Distro found ${DISTRO}"
     deps_opensuse
     ;;
