@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
 Name=Tsuki
-Comment=Rei's Edition of ElKowar's Phocus
+Comment=Rei's modification of phocus(border-radius: 0;)
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=phocus
-MetacityTheme=phocus
-IconTheme=Adwaita
-CursorTheme=Adwaita
+GtkTheme=Tsuki
+MetacityTheme=Tsuki
+IconTheme=gnome
+CursorTheme=DMZ-Black
 ButtonLayout=menu:minimize,maximize,close

@@ -1,22 +1,25 @@
-@-moz-document url-prefix(about:blank), url-prefix(about:newtab) {
-
-  html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
-  
-   background: #101010 !important;
-  
+  @namespace url("http://www.w3.org/1999/xhtml");
+  @-moz-document url("about:home") ,url("about:blank"), url("about:newtab") {
+    body {
+      background-color: #101010 !important;
+    }
+    .search-handoff-button {
+      border-radius: 12px !important;
+      border-width: 2px !important;
+      border-color: #151515 !important;
+      background-size: 0px !important;
+      background-color: #151515 !important;
+      padding-inline-start: 10px !important;
+      padding-inline-end: 10px !important;
+    }
+  .search-wrapper input {
+    background-color: #151515 !important;
+    border-radius: 0px !important;
+    background-image: none !important;
+    background-size: none !important;
+    text-align: center !important;
+    font-size: 17px !important;
+    padding-inline-start: 10px !important;
+    padding-inline-end: 10px !important;
   }
-  
-}
-  
-  @-moz-document url(about:newtab),
-  
-  url(about:home) {
-  
-  body{
-  
-    background-color:#101010 !important;
-  
-    color:#222023 !important;
-  
-  } 
 }
