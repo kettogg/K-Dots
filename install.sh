@@ -381,7 +381,7 @@ case $DISTRO in
     echo -e ":: Distro found ${DISTRO}"
     deps_arch
     ;;
-  ubuntu)
+  ubuntu | debian)
     echo -e ":: Distro found ${DISTRO}"
     deps_ubuntu
     ;;
