@@ -377,7 +377,7 @@ EOF
 DISTRO=$(awk -F= '/^ID=/{print $2}' /etc/os-release | tr -d '"')
 
 case $DISTRO in
-  arch | endeavouros)
+  arch | endeavouros | manjaro)
     echo -e ":: Distro found ${DISTRO}"
     deps_arch
     ;;
