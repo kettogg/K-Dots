@@ -14,12 +14,12 @@
 
 </div>
 
-> [!Important]
-> <a href="#installation">Installation</a> section is updated and tested on fresh install of Arch linux :) <br/>
-> Now supports Ubuntu, Opensuse
+> [!Warning]
+> KDE Plasma 6 is not supported, so it won't work on Arch linux and it's based distros.
 
-> [!Note]
-> Themes moved to their respective branch
+> [!Important]
+> Refer <a href="#installation">Installation</a> section on how to setup. <br/>
+> Supports ~Arch~, Ubuntu, Opensuse
 
 ## Showcase
 <!-- | <b>Kitty + Starship</b>                                                                                                  |
